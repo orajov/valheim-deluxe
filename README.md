@@ -1,2 +1,2 @@
-Valheim Epic Deluxe Server Configuration
+Valheim Epic Deluxe - Server Configuration
 ---

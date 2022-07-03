@@ -3,18 +3,25 @@
     - 0.207.2 patch Frost Caves fix
         + loottables items
         - iteminfo
-        - disenchant trophies
+        + disenchant trophies
     - 0.205.5 patch Abomination
         + loottables items
         + iteminfo
-        - disenchant trophies
-    - Sage Armor fix
+        + disenchant trophies
+    - Sage vault fix
         - loottables items
         - iteminfo
     - Artisan table
         - create materials
-    - config
-
+    - Item stats fix
+        - throwable
+        - recall
+        - glowing
+        - forced stats
+    + Extensions
+        + transmodification
+        + sage vault
+    - Config
 #####################################
 - Creature Level & Loot Control
     - general
@@ -23,20 +30,42 @@
     - bosses
     - custom leven chances
     - creature affix
-
 #####################################
 - Magic Overhaul
-    - balance class
+    - Balance class
         - remove engineer
         - berseker stamina multip
-
 #####################################
 - Server configuration
-    - server characters
-    - debug mode
-    - upgrade world
-    - network
-    
+    - Server characters
+    + Debug mode
+    + Upgrade world
+    + Network
 #####################################
 - Slavelings
-    - config
+    - Config
+#####################################
+- Speedy path
+    - Config
+#####################################
+- User Interface
+    - Equipment and quick slots
+#####################################
+- Build Restrictions
+    - Config
+#####################################
+- Utility
+    - Equipment in water
+    - Repair all
+    - Infinity tools
+    - Faster teleport
+    - Fall damage for mobs
+    - Floors are roofs
+    - Less food degradation
+    - No Hugin tutorial
+    - Better ladders
+    - Blacksmith tools
+    - Speedy path
+    - Instant drop
+    - Custom raids
+    - Easy translate
