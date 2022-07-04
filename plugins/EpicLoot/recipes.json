@@ -744,7 +744,7 @@
     {
       "name": "Recipe_DragonTearRunestone",
       "item": "RunestoneLegendary",
-      "craftingStation": "piece_workbench",
+      "craftingStation": ["piece_workbench", "piece_artisanstation"],
       "resources": [
         {
           "item": "DragonTear",
@@ -755,7 +755,7 @@
     {
       "name": "Recipe_YagluthThingRunestone",
       "item": "RunestoneLegendary",
-      "craftingStation": "piece_workbench",
+      "craftingStation": ["piece_workbench", "piece_artisanstation"],
       "resources": [
         {
           "item": "YagluthDrop",
@@ -768,7 +768,7 @@
       "name": "Recipe_Crystal_ShardLegendary",
       "item": "Crystal",
       "amount": 5,
-      "craftingStation": "piece_workbench",
+      "craftingStation": ["piece_workbench", "piece_artisanstation"],
       "resources": [
         {
           "item": "ShardLegendary",
@@ -780,7 +780,7 @@
       "name": "Recipe_Crystal_ShardEpic",
       "item": "Crystal",
       "amount": 1,
-      "craftingStation": "piece_workbench",
+      "craftingStation": ["piece_workbench", "piece_artisanstation"],
       "resources": [
         {
           "item": "ShardEpic",
@@ -791,7 +791,7 @@
     {
       "name": "Recipe_MagicRunestone",
       "item": "RunestoneMagic",
-      "craftingStation": "piece_workbench",
+      "craftingStation":  ["piece_workbench", "piece_artisanstation"],
       "resources": [
         {
           "item": "DustMagic",
@@ -810,7 +810,7 @@
     {
       "name": "Recipe_RareRunestone",
       "item": "RunestoneRare",
-      "craftingStation": "piece_workbench",
+      "craftingStation": ["piece_workbench", "piece_artisanstation"],
       "resources": [
         {
           "item": "DustRare",
@@ -829,7 +829,7 @@
     {
       "name": "Recipe_EpicRunestone",
       "item": "RunestoneEpic",
-      "craftingStation": "piece_workbench",
+      "craftingStation": ["piece_workbench", "piece_artisanstation"],
       "resources": [
         {
           "item": "DustEpic",
@@ -848,7 +848,7 @@
     {
       "name": "Recipe_LegendaryRunestone",
       "item": "RunestoneLegendary",
-      "craftingStation": "piece_workbench",
+      "craftingStation": ["piece_workbench", "piece_artisanstation"],
       "resources": [
         {
           "item": "DustLegendary",
@@ -872,7 +872,7 @@
       "resources": [
         {
           "item": "Iron",
-          "amount": 10
+          "amount": 3
         }
       ]
     },
@@ -885,26 +885,6 @@
         {
           "item": "Wood",
           "amount": 40
-        }
-      ]
-    },
-    {
-      "name": "Recipe_BiggerArrowStacks_Fire",
-      "item": "ArrowFire",
-      "amount": 100,
-      "craftingStation": "piece_workbench",
-      "resources": [
-        {
-          "item": "Wood",
-          "amount": 40
-        },
-        {
-          "item": "Resin",
-          "amount": 40
-        },
-        {
-          "item": "Feathers",
-          "amount": 10
         }
       ]
     }

@@ -63,17 +63,17 @@
     {
       "Type": "ChestArmor",
       "Fallback": "",
-      "Items": [ "ArmorRagsChest", "ArmorLeatherChest", "ArmorTrollLeatherChest", "ArmorBronzeChest", "ArmorIronChest", "ArmorWolfChest", "ArmorPaddedCuirass", "ArmorRootChest" ]
+      "Items": [ "ArmorRagsChest", "ArmorLeatherChest", "ArmorTrollLeatherChest", "ArmorBronzeChest", "ArmorIronChest", "ArmorWolfChest", "ArmorPaddedCuirass", "ArmorRootChest", "ArmorFenringChest", "SageRobeBlack", "SageRobeBlue", "SageRobeBrown", "SageRobeGray", "SageRobeWhite", "SageRobeGreen", "SageRobeRed" ]
     },
     {
       "Type": "LegsArmor",
       "Fallback": "",
-      "Items": [ "ArmorRagsLegs", "ArmorLeatherLegs", "ArmorTrollLeatherLegs", "ArmorBronzeLegs", "ArmorIronLegs", "ArmorWolfLegs", "ArmorPaddedGreaves", "ArmorRootLegs" ]
+      "Items": [ "ArmorRagsLegs", "ArmorLeatherLegs", "ArmorTrollLeatherLegs", "ArmorBronzeLegs", "ArmorIronLegs", "ArmorWolfLegs", "ArmorPaddedGreaves", "ArmorRootLegs", "ArmorFenringLegs" ]
     },
     {
       "Type": "HeadArmor",
       "Fallback": "ArmorRagsChest",
-      "Items": [ "HelmetLeather", "HelmetTrollLeather", "HelmetBronze", "HelmetIron", "HelmetDrake", "HelmetPadded", "HelmetRoot" ]
+      "Items": [ "HelmetLeather", "HelmetTrollLeather", "HelmetBronze", "HelmetIron", "HelmetDrake", "HelmetPadded", "HelmetRoot", "HelmetFenring" ]
     },
     {
       "Type": "ShouldersArmor",

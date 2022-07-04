@@ -1,8 +1,8 @@
 #####################################
 - Epic Loot
-    - 0.207.2 patch Frost Caves fix
+    + 0.207.2 patch Frost Caves fix
         + loottables items
-        - iteminfo
+        + iteminfo
         + disenchant trophies
     + 0.205.5 patch Abomination
         + loottables items
@@ -11,8 +11,8 @@
     - Sage vault fix
         - loottables items
         - iteminfo
-    - Artisan table
-        - create materials
+    + Artisan table
+        + create materials
     - Item stats
         - remove glowing
         - remove throwable
@@ -33,10 +33,10 @@
         + custom leven chances
         + creature affix
 #####################################
-- Magic Overhaul
-    - Balance class
-        - remove engineer
-        - berseker stamina multip
++ Magic Overhaul
+    + Balance class
+        + remove engineer
+        + berseker stamina multip
 #####################################
 - Server configuration
     - Server characters
@@ -52,7 +52,7 @@
     + Ashlands
     + Mistlands
 #####################################
-- Utility
++ Utility
     + Equipment and quick slots
     + Equipment in water
     + Repair all
@@ -70,6 +70,7 @@
     + Speedy path
     + Instant drop
     + Custom raids
+    + Groups
     + Easy translate
-    - Build Restrictions
-        - config
+    + Build Restrictions
+        + config

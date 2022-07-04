@@ -597,6 +597,44 @@
           "Item": "CapeLox",
           "Weight": 1,
           "Rarity": [0, 15, 60, 25]
+        },
+        {
+          "Item": "SageRobeBlack",
+          "Weight": 1,
+          "Rarity": [0, 15, 60, 25]
+        },
+        {
+          "Item": "SageRobeBlue",
+          "Weight": 1,
+          "Rarity": [0, 15, 60, 25]
+        }
+        ,
+        {
+          "Item": "SageRobeBrown",
+          "Weight": 1,
+          "Rarity": [0, 15, 60, 25]
+        }
+        ,
+        {
+          "Item": "SageRobeGray",
+          "Weight": 1,
+          "Rarity": [0, 15, 60, 25]
+        },
+        {
+          "Item": "SageRobeWhite",
+          "Weight": 1,
+          "Rarity": [0, 15, 60, 25]
+        },
+        {
+          "Item": "SageRobeGreen",
+          "Weight": 1,
+          "Rarity": [0, 15, 60, 25]
+        }
+        ,
+        {
+          "Item": "SageRobeRed",
+          "Weight": 1,
+          "Rarity": [0, 15, 60, 25]
         }
       ]
     },
