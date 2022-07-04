@@ -4,7 +4,7 @@
         + loottables items
         - iteminfo
         + disenchant trophies
-    - 0.205.5 patch Abomination
+    + 0.205.5 patch Abomination
         + loottables items
         + iteminfo
         + disenchant trophies
@@ -13,23 +13,25 @@
         - iteminfo
     - Artisan table
         - create materials
-    - Item stats fix
-        - throwable
-        - recall
-        - glowing
+    - Item stats
+        - remove glowing
+        - remove throwable
+        - fix recall
         - forced stats
     + Extensions
-        + transmodification
-        + sage vault
+        + Transmodification
+        + SageVault
+        + EpicValheim
     - Config
 #####################################
-- Creature Level & Loot Control
-    - general
-    - creatures
-    - loot
-    - bosses
-    - custom leven chances
-    - creature affix
++ Creature Level & Loot Control
+    + Config
+        + general
+        + creatures
+        + loot
+        + bosses
+        + custom leven chances
+        + creature affix
 #####################################
 - Magic Overhaul
     - Balance class
@@ -45,27 +47,29 @@
 - Slavelings
     - Config
 #####################################
-- Speedy path
-    - Config
-#####################################
-- User Interface
-    - Equipment and quick slots
-#####################################
-- Build Restrictions
-    - Config
++ Mineshafts
+    + Deep North
+    + Ashlands
+    + Mistlands
 #####################################
 - Utility
-    - Equipment in water
-    - Repair all
-    - Infinity tools
-    - Faster teleport
-    - Fall damage for mobs
-    - Floors are roofs
-    - Less food degradation
-    - No Hugin tutorial
-    - Better ladders
-    - Blacksmith tools
-    - Speedy path
-    - Instant drop
-    - Custom raids
-    - Easy translate
+    + Equipment and quick slots
+    + Equipment in water
+    + Repair all
+    + Multicraft
+    + Infinity tools
+    + Trashcan
+    + Faster teleport
+    + Teleport everything
+    + Fall damage for mobs
+    + Floors are roofs
+    + Less food degradation
+    + No Hugin tutorial
+    + Better ladders
+    + Blacksmith tools
+    + Speedy path
+    + Instant drop
+    + Custom raids
+    + Easy translate
+    - Build Restrictions
+        - config
