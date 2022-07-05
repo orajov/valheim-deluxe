@@ -8,9 +8,9 @@
         + loottables items
         + iteminfo
         + disenchant trophies
-    - Sage vault fix
-        - loottables items
-        - iteminfo
+    + Sage vault fix
+        + loottables items
+        + iteminfo
     + Artisan table
         + create materials
     - Item stats
@@ -44,8 +44,10 @@
     + Upgrade world
     + Network
 #####################################
-- Slavelings
-    - Config
++ NPC
+    + RRRNpcs
+    + Villagers
+    + Slavelings
 #####################################
 + Mineshafts
     + Deep North
