@@ -44,6 +44,10 @@
     + Upgrade world
     + Network
 #####################################
++ PVP
+    + Default PVP
+    + No skill drain
+#####################################
 + NPC
     + RRRNpcs
     + Villagers
