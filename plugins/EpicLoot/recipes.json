@@ -581,7 +581,7 @@
     {
       "name": "Recipe_Crystal_ShardLegendary",
       "item": "ShardLegendary",
-      "amount": 5,
+      "amount": 1,
       "craftingStation": "piece_artisanstation",
       "resources": [
         {
@@ -606,7 +606,7 @@
       "name": "Recipe_BiggerArrowStacks_Wood",
       "item": "ArrowWood",
       "amount": 100,
-      "craftingStation": "",
+      "craftingStation": "piece_workbench",
       "resources": [
         {
           "item": "Wood",
