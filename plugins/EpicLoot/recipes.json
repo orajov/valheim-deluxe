@@ -591,82 +591,6 @@
       ]
     },
     {
-      "name": "Recipe_MagicRunestone",
-      "item": "RunestoneMagic",
-      "craftingStation":  "",
-      "resources": [
-        {
-          "item": "DustMagic",
-          "amount": 10
-        },
-        {
-          "item": "EssenceMagic",
-          "amount": 10
-        },
-        {
-          "item": "ReagentMagic",
-          "amount": 10
-        }
-      ]
-    },
-    {
-      "name": "Recipe_RareRunestone",
-      "item": "RunestoneRare",
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "DustRare",
-          "amount": 10
-        },
-        {
-          "item": "EssenceRare",
-          "amount": 10
-        },
-        {
-          "item": "ReagentRare",
-          "amount": 10
-        }
-      ]
-    },
-    {
-      "name": "Recipe_EpicRunestone",
-      "item": "RunestoneEpic",
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "DustEpic",
-          "amount": 10
-        },
-        {
-          "item": "EssenceEpic",
-          "amount": 10
-        },
-        {
-          "item": "ReagentEpic",
-          "amount": 10
-        }
-      ]
-    },
-    {
-      "name": "Recipe_LegendaryRunestone",
-      "item": "RunestoneLegendary",
-      "craftingStation": "piece_artisanstation",
-      "resources": [
-        {
-          "item": "DustLegendary",
-          "amount": 10
-        },
-        {
-          "item": "EssenceLegendary",
-          "amount": 10
-        },
-        {
-          "item": "ReagentLegendary",
-          "amount": 10
-        }
-      ]
-    },
-    {
       "name": "Recipe_Chain_Iron",
       "item": "Chain",
       "amount": 1,
@@ -687,6 +611,22 @@
         {
           "item": "Wood",
           "amount": 40
+        }
+      ]
+    },
+    {
+      "name": "Recipe_Tar",
+      "item": "Tar",
+      "amount": 1,
+      "craftingStation": "forge",
+      "resources": [
+        {
+          "item": "Resin",
+          "amount": 1
+        },
+        {
+          "item": "Coal",
+          "amount": 1
         }
       ]
     }
