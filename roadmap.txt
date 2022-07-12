@@ -14,15 +14,15 @@
     + Artisan table
         + create materials
     - Item stats
-        - remove glowing
-        - remove throwable
-        - fix recall
+        + remove glowing
+        + remove throwable
+        + fix recall
         - forced stats
     + Extensions
         + Transmodification
         + SageVault
         + EpicValheim
-    - Config
+        + RecipeCustomization
 #####################################
 + Creature Level & Loot Control
     + Config
@@ -37,6 +37,8 @@
     + Balance class
         + remove engineer
         + berseker stamina multip
+    - Legendary weapons
+        - materials tweak
 #####################################
 - Server configuration
     - Server characters

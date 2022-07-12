@@ -1857,28 +1857,6 @@
       "Suffixes": [ "$mod_epicloot_me_comfortable_suffix1" ]
     },
     {
-      "Type" : "Glowing",
-      "DisplayText" : "$mod_epicloot_me_glowing_display",
-      "Description" : "$mod_epicloot_me_glowing_desc",
-      "EquipFx" : "GlowingAura", 
-      "Requirements" : {
-        "AllowedItemTypes" : [
-          "Helmet",
-          "Chest",
-          "Legs",
-          "Shoulder",
-          "Utility"
-        ]
-      },
-      "SelectionWeight" : 1,
-      "Prefixes": [
-        "$mod_epicloot_me_glowing_prefix1"
-      ],
-      "Suffixes": [
-        "$mod_epicloot_me_glowing_suffix1"
-      ]
-    },
-    {
       "Type" : "Executioner",
       "DisplayText" : "$mod_epicloot_me_executioner_display",
       "Description" : "$mod_epicloot_me_executioner_desc",

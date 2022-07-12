@@ -68,8 +68,7 @@
       "GuaranteedMagicEffects": [
         { "Type": "Throwable" },
         { "Type": "RecallWeapon" },
-        { "Type": "Opportunist", "Values": { "MinValue" : 25, "MaxValue" : 30, "Increment" : 1 } },
-        { "Type": "ModifyBackstab", "Values": { "MinValue" : 80, "MaxValue" : 90, "Increment" : 1 } }
+        { "Type": "Opportunist", "Values": { "MinValue" : 25, "MaxValue" : 30, "Increment" : 1 } }
       ]
     },
     {
@@ -97,7 +96,6 @@
         "AllowedSkillTypes": [ "Swords" ]
       },
       "GuaranteedMagicEffects": [
-        { "Type": "Glowing" },
         { "Type": "RemoveSpeedPenalty" },
         { "Type": "Opportunist", "Values": { "MinValue" : 30, "MaxValue" : 35, "Increment" : 1 } },
         { "Type": "ModifyBackstab", "Values": { "MinValue" : 61, "MaxValue" : 80, "Increment" : 1 } }
