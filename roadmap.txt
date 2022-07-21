@@ -1,5 +1,5 @@
 #####################################
-- Epic Loot
++ Epic Loot
     + 0.207.2 patch Frost Caves fix
         + loottables items
         + iteminfo
@@ -13,11 +13,11 @@
         + iteminfo
     + Artisan table
         + create materials
-    - Item stats
+    + Item stats
         + remove glowing
         + remove throwable
         + fix recall
-        - forced stats
+        + forced stats
     + Extensions
         + Transmodification
         + SageVault
@@ -37,8 +37,6 @@
     + Balance class
         + remove engineer
         + berseker stamina multip
-    - Legendary weapons
-        - materials tweak
 #####################################
 - Server configuration
     - Server characters
@@ -54,6 +52,9 @@
     + RRRNpcs
     + Villagers
     + Slavelings
+#####################################
++ Better Trader
+    + Configuration
 #####################################
 + Mineshafts
     + Deep North
@@ -81,4 +82,4 @@
     + Groups
     + Easy translate
     + Build Restrictions
-        + config
+    + Target portal
