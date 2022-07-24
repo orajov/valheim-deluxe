@@ -63,17 +63,17 @@
     {
       "Type": "ChestArmor",
       "Fallback": "",
-      "Items": [ "ArmorRagsChest", "ArmorLeatherChest", "ArmorTrollLeatherChest", "ArmorBronzeChest", "ArmorIronChest", "ArmorWolfChest", "ArmorPaddedCuirass", "ArmorRootChest", "ArmorFenringChest", "SageRobeBlack", "SageRobeBlue", "SageRobeBrown", "SageRobeGray", "SageRobeWhite", "SageRobeGreen", "SageRobeRed", "T1ChaosPlateArmor", "T2ChaosPlateArmor", "ChaosPlateArmorBody" ]
+      "Items": [ "ArmorRagsChest", "ArmorLeatherChest", "ArmorTrollLeatherChest", "ArmorBronzeChest", "ArmorIronChest", "ArmorWolfChest", "ArmorPaddedCuirass", "T1ChaosPlateArmor", "T2ChaosPlateArmor", "ChaosPlateArmorBody" ]
     },
     {
       "Type": "LegsArmor",
       "Fallback": "",
-      "Items": [ "ArmorRagsLegs", "ArmorLeatherLegs", "ArmorTrollLeatherLegs", "ArmorBronzeLegs", "ArmorIronLegs", "ArmorWolfLegs", "ArmorPaddedGreaves", "ArmorRootLegs", "ArmorFenringLegs", "T1ChaosPlateLegs", "T2ChaosPlateLegs", "ChaosPlateLegs" ]
+      "Items": [ "ArmorRagsLegs", "ArmorLeatherLegs", "ArmorTrollLeatherLegs", "ArmorBronzeLegs", "ArmorIronLegs", "ArmorWolfLegs", "ArmorPaddedGreaves", "T1ChaosPlateLegs", "T2ChaosPlateLegs", "ChaosPlateLegs" ]
     },
     {
       "Type": "HeadArmor",
       "Fallback": "ArmorRagsChest",
-      "Items": [ "HelmetLeather", "HelmetTrollLeather", "HelmetBronze", "HelmetIron", "HelmetDrake", "HelmetPadded", "HelmetRoot", "HelmetFenring", "T1ChaosPlateHelm", "T2ChaosPlateHelm", "ChaosPlateHelm" ]
+      "Items": [ "HelmetLeather", "HelmetTrollLeather", "HelmetBronze", "HelmetIron", "HelmetDrake", "HelmetPadded", "T1ChaosPlateHelm", "T2ChaosPlateHelm", "ChaosPlateHelm" ]
     },
     {
       "Type": "ShouldersArmor",
