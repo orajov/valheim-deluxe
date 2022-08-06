@@ -344,7 +344,6 @@
         }
       ]
     },
-
     {
       "name": "Recipe_EssenceRareUpgrade",
       "item": "EssenceRare",
@@ -490,191 +489,6 @@
         }
       ]
     },
-
-    {
-      "name": "Recipe_MagicShardToDust_Conversion",
-      "item": "DustMagic",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardMagic",
-          "amount": 2
-        }
-      ]
-    },
-    {
-      "name": "Recipe_MagicShardToEssence_Conversion",
-      "item": "EssenceMagic",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardMagic",
-          "amount": 2
-        }
-      ]
-    },
-    {
-      "name": "Recipe_MagicShardToReagent_Conversion",
-      "item": "ReagentMagic",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardMagic",
-          "amount": 2
-        }
-      ]
-    },
-
-    {
-      "name": "Recipe_RareShardToDust_Conversion",
-      "item": "DustRare",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardRare",
-          "amount": 2
-        },
-        {
-          "item": "Coins",
-          "amount": 2
-        }
-      ]
-    },
-    {
-      "name": "Recipe_RareShardToEssence_Conversion",
-      "item": "EssenceRare",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardRare",
-          "amount": 2
-        },
-        {
-          "item": "Coins",
-          "amount": 2
-        }
-      ]
-    },
-    {
-      "name": "Recipe_RareShardToReagent_Conversion",
-      "item": "ReagentRare",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardRare",
-          "amount": 2
-        },
-        {
-          "item": "Coins",
-          "amount": 2
-        }
-      ]
-    },
-
-    {
-      "name": "Recipe_EpicShardToDust_Conversion",
-      "item": "DustEpic",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardEpic",
-          "amount": 2
-        },
-        {
-          "item": "Coins",
-          "amount": 3
-        }
-      ]
-    },
-    {
-      "name": "Recipe_EpicShardToEssence_Conversion",
-      "item": "EssenceEpic",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardEpic",
-          "amount": 2
-        },
-        {
-          "item": "Coins",
-          "amount": 3
-        }
-      ]
-    },
-    {
-      "name": "Recipe_EpicShardToReagent_Conversion",
-      "item": "ReagentEpic",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardEpic",
-          "amount": 2
-        },
-        {
-          "item": "Coins",
-          "amount": 3
-        }
-      ]
-    },
-
-    {
-      "name": "Recipe_LegendaryShardToDust_Conversion",
-      "item": "DustLegendary",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardLegendary",
-          "amount": 2
-        },
-        {
-          "item": "Coins",
-          "amount": 4
-        }
-      ]
-    },
-    {
-      "name": "Recipe_LegendaryShardToEssence_Conversion",
-      "item": "EssenceLegendary",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardLegendary",
-          "amount": 2
-        },
-        {
-          "item": "Coins",
-          "amount": 4
-        }
-      ]
-    },
-    {
-      "name": "Recipe_LegendaryShardToReagent_Conversion",
-      "item": "ReagentLegendary",
-      "amount": 1,
-      "craftingStation": "",
-      "resources": [
-        {
-          "item": "ShardLegendary",
-          "amount": 2
-        },
-        {
-          "item": "Coins",
-          "amount": 4
-        }
-      ]
-    },
-
     {
       "name": "Recipe_BoneSkeletonTrophy",
       "item": "TrophySkeleton",
@@ -744,7 +558,7 @@
     {
       "name": "Recipe_DragonTearRunestone",
       "item": "RunestoneLegendary",
-      "craftingStation": ["piece_workbench", "piece_artisanstation"],
+      "craftingStation": "piece_artisanstation",
       "resources": [
         {
           "item": "DragonTear",
@@ -755,7 +569,7 @@
     {
       "name": "Recipe_YagluthThingRunestone",
       "item": "RunestoneLegendary",
-      "craftingStation": ["piece_workbench", "piece_artisanstation"],
+      "craftingStation": "piece_artisanstation",
       "resources": [
         {
           "item": "YagluthDrop",
@@ -766,100 +580,12 @@
 
     {
       "name": "Recipe_Crystal_ShardLegendary",
-      "item": "Crystal",
-      "amount": 5,
-      "craftingStation": ["piece_workbench", "piece_artisanstation"],
-      "resources": [
-        {
-          "item": "ShardLegendary",
-          "amount": 1
-        }
-      ]
-    },
-    {
-      "name": "Recipe_Crystal_ShardEpic",
-      "item": "Crystal",
+      "item": "ShardLegendary",
       "amount": 1,
-      "craftingStation": ["piece_workbench", "piece_artisanstation"],
+      "craftingStation": "piece_artisanstation",
       "resources": [
         {
-          "item": "ShardEpic",
-          "amount": 1
-        }
-      ]
-    },
-    {
-      "name": "Recipe_MagicRunestone",
-      "item": "RunestoneMagic",
-      "craftingStation":  ["piece_workbench", "piece_artisanstation"],
-      "resources": [
-        {
-          "item": "DustMagic",
-          "amount": 10
-        },
-        {
-          "item": "EssenceMagic",
-          "amount": 10
-        },
-        {
-          "item": "ReagentMagic",
-          "amount": 10
-        }
-      ]
-    },
-    {
-      "name": "Recipe_RareRunestone",
-      "item": "RunestoneRare",
-      "craftingStation": ["piece_workbench", "piece_artisanstation"],
-      "resources": [
-        {
-          "item": "DustRare",
-          "amount": 10
-        },
-        {
-          "item": "EssenceRare",
-          "amount": 10
-        },
-        {
-          "item": "ReagentRare",
-          "amount": 10
-        }
-      ]
-    },
-    {
-      "name": "Recipe_EpicRunestone",
-      "item": "RunestoneEpic",
-      "craftingStation": ["piece_workbench", "piece_artisanstation"],
-      "resources": [
-        {
-          "item": "DustEpic",
-          "amount": 10
-        },
-        {
-          "item": "EssenceEpic",
-          "amount": 10
-        },
-        {
-          "item": "ReagentEpic",
-          "amount": 10
-        }
-      ]
-    },
-    {
-      "name": "Recipe_LegendaryRunestone",
-      "item": "RunestoneLegendary",
-      "craftingStation": ["piece_workbench", "piece_artisanstation"],
-      "resources": [
-        {
-          "item": "DustLegendary",
-          "amount": 10
-        },
-        {
-          "item": "EssenceLegendary",
-          "amount": 10
-        },
-        {
-          "item": "ReagentLegendary",
+          "item": "Crystal",
           "amount": 10
         }
       ]
@@ -880,11 +606,27 @@
       "name": "Recipe_BiggerArrowStacks_Wood",
       "item": "ArrowWood",
       "amount": 100,
-      "craftingStation": "",
+      "craftingStation": "piece_workbench",
       "resources": [
         {
           "item": "Wood",
           "amount": 40
+        }
+      ]
+    },
+    {
+      "name": "Recipe_Tar",
+      "item": "Tar",
+      "amount": 1,
+      "craftingStation": "forge",
+      "resources": [
+        {
+          "item": "Resin",
+          "amount": 1
+        },
+        {
+          "item": "Coal",
+          "amount": 1
         }
       ]
     }

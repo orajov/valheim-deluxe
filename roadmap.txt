@@ -1,5 +1,5 @@
 #####################################
-- Epic Loot
++ Epic Loot
     + 0.207.2 patch Frost Caves fix
         + loottables items
         + iteminfo
@@ -8,21 +8,21 @@
         + loottables items
         + iteminfo
         + disenchant trophies
-    - Sage vault fix
-        - loottables items
-        - iteminfo
-    + Artisan table
-        + create materials
-    - Item stats
-        - remove glowing
-        - remove throwable
-        - fix recall
-        - forced stats
+    + Sage vault fix
+        + loottables items
+        + iteminfo
+    - Artisan table
+        - create materials
+    + Item stats
+        + remove glowing
+        + remove throwable
+        + fix recall
+        + forced stats
     + Extensions
         + Transmodification
         + SageVault
         + EpicValheim
-    - Config
+        + RecipeCustomization
 #####################################
 + Creature Level & Loot Control
     + Config
@@ -44,8 +44,17 @@
     + Upgrade world
     + Network
 #####################################
-- Slavelings
-    - Config
++ PVP
+    + Default PVP
+    + No skill drain
+#####################################
++ NPC
+    + RRRNpcs
+    + Villagers
+    + Slavelings
+#####################################
++ Better Trader
+    + Configuration
 #####################################
 + Mineshafts
     + Deep North
@@ -73,4 +82,4 @@
     + Groups
     + Easy translate
     + Build Restrictions
-        + config
+    + Target portal
