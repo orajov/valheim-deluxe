@@ -1,5 +1,5 @@
 #####################################
-+ Epic Loot
+- Epic Loot
     + 0.207.2 patch Frost Caves fix
         + loottables items
         + iteminfo
@@ -13,6 +13,8 @@
         + iteminfo
     - Artisan table
         - create materials
+    - Disenchant
+        - boss drop tweak
     + Item stats
         + remove glowing
         + remove throwable
@@ -34,15 +36,22 @@
         + creature affix
 #####################################
 + Magic Overhaul
-    + Balance class
+    + Balance classes
         + remove engineer
         + berseker stamina multip
 #####################################
-- Server configuration
-    - Server characters
-    + Debug mode
-    + Upgrade world
-    + Network
+- Skyheim
+    - Customize spells
+        - recall
+#####################################
+- Building
+    + Potion shelf
+    + More gates
+    + Odin camp
+    + Odin ship
+    + Stacked bars
+    - Goblin structures
+        - costs tweak
 #####################################
 + PVP
     + Default PVP
@@ -61,7 +70,7 @@
     + Ashlands
     + Mistlands
 #####################################
-+ Utility
+- Utility
     + Equipment and quick slots
     + Equipment in water
     + Repair all
@@ -83,3 +92,10 @@
     + Easy translate
     + Build Restrictions
     + Target portal
+    - Alltameable
+#####################################
+- Server configuration
+    - Server characters
+    + Debug mode
+    + Upgrade world
+    + Network
