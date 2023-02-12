@@ -1,101 +1,56 @@
 #####################################
-- Epic Loot
-    + 0.207.2 patch Frost Caves fix
-        + loottables items
-        + iteminfo
-        + disenchant trophies
-    + 0.205.5 patch Abomination
-        + loottables items
-        + iteminfo
-        + disenchant trophies
-    + Sage vault fix
-        + loottables items
-        + iteminfo
-    - Artisan table
-        - create materials
-    - Disenchant
-        - boss drop tweak
-    + Item stats
+- EpicValheim
+    - Epic Loot
         + remove glowing
-        + remove throwable
-        + fix recall
-        + forced stats
-    + Extensions
-        + Transmodification
-        + SageVault
-        + EpicValheim
-        + RecipeCustomization
+        - remove health critical
+    - Skyheim
+        - remove runes
+    - BetterTrader
+        - configuration
 #####################################
-+ Creature Level & Loot Control
-    + Config
-        + general
-        + creatures
-        + loot
-        + bosses
-        + custom leven chances
-        + creature affix
+- NPC
+    + RRRCore
+    + RRRNpcs
+    + SpawnThat
+    + YamlDotNet
+    - Alltameable
+        - goblin
+        - lycans
 #####################################
-+ Magic Overhaul
-    + Balance classes
-        + remove engineer
-        + berseker stamina multip
-#####################################
-- Skyheim
-    - Customize spells
-        - recall
++ Skills
+    + Cartogaphy
+    + Blacksmithing
+    + Evasion
 #####################################
 - Building
-    + Potion shelf
-    + More gates
-    + Odin camp
-    + Odin ship
     + Stacked bars
+    - Odin ship
+        - remove Big Cargo ship
+        - remove Fast Ship Skuldelev
+        - remove Cargo Ship
+        - remove Fishing Canoe
+        - remove Cargo Carevel
     - Goblin structures
         - costs tweak
 #####################################
-+ PVP
-    + Default PVP
-    + No skill drain
++ Utility
+    + WackysDatabase
+    + EquipmentAndQuickSlots
+    + UseEquipmentInWater
+    + EasyTranslate
+    + RepairAll
+    + TrashCan
+    + InstantMonsterDrop
+    + FloorsAreRoofs
+    + BetterLadders
+    + SpeedyPaths
+    + InstantMonsterDrop
+    + ItemStandAllItems
+    + MistBeGone
+    + MultiCraft
+    + LessFoodDegradation
+    + ImFRIENDLY
 #####################################
-+ NPC
-    + RRRNpcs
-    + Villagers
-    + Slavelings
-#####################################
-+ Better Trader
-    + Configuration
-#####################################
-+ Mineshafts
-    + Deep North
-    + Ashlands
-    + Mistlands
-#####################################
-- Utility
-    + Equipment and quick slots
-    + Equipment in water
-    + Repair all
-    + Multicraft
-    + Infinity tools
-    + Trashcan
-    + Faster teleport
-    + Teleport everything
-    + Fall damage for mobs
-    + Floors are roofs
-    + Less food degradation
-    + No Hugin tutorial
-    + Better ladders
-    + Blacksmith tools
-    + Speedy path
-    + Instant drop
-    + Custom raids
-    + Groups
-    + Easy translate
-    + Build Restrictions
-    + Target portal
-    - Alltameable
-#####################################
-- Server configuration
-    - Server characters
-    + Debug mode
-    + Upgrade world
-    + Network
++ Tech
+    + BetterNetworking
+    + Smooth save

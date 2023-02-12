@@ -85,6 +85,11 @@
                 Interval in which the check timer for the repeat delay is decremented.
             </summary>
         </member>
+        <member name="P:Jotunn.Configs.ButtonConfig.Hint">
+            <summary>
+                Key hint text, overrides HintToken when set
+            </summary>
+        </member>
         <member name="P:Jotunn.Configs.ButtonConfig.HintToken">
             <summary>
                 Token for translating the key hint text.
@@ -111,6 +116,157 @@
             <summary>
                 Internal flag if this button config is backed by any BepInEx ConfigEntry
             </summary>
+        </member>
+        <member name="T:Jotunn.Configs.ClutterConfig">
+            <summary>
+                Configuration class for adding custom clutter.<br />
+                Use this in a constructor of <see cref="T:Jotunn.Entities.CustomClutter"/>
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.Enabled">
+            <summary>
+                Whether this clutter gets spawned in the world. Defaults to <c>true</c>.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.Biome">
+            <summary>
+                Biome to spawn in, multiple Biomes can be allowed with <see cref="M:Jotunn.Managers.ZoneManager.AnyBiomeOf(Heightmap.Biome[])"/>.<br />
+                Default to all biomes.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.Instanced">
+            <summary>
+                Whether this clutter has an <see cref="T:InstanceRenderer"/> attached that should be used.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.Amount">
+            <summary>
+                The amount of displayed clutter prefabs per patch.
+                For high values an <see cref="T:InstanceRenderer"/> should be used to lower the amount of overall prefabs.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.OnUncleared">
+            <summary>
+                Whether this clutter should be shown on unmodified ground.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.OnCleared">
+            <summary>
+                Whether this clutter should be shown on modified ground.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.ScaleMin">
+            <summary>
+                Minimum random size of the prefab, only active when <see cref="P:Jotunn.Configs.ClutterConfig.Instanced"/> is used.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.ScaleMax">
+            <summary>
+                Maximum random size of the prefab, only active when <see cref="P:Jotunn.Configs.ClutterConfig.Instanced"/> is used.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.MaxTilt">
+            <summary>
+                Maximum terrain tilt in degrees this clutter will be placed on.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.MinAltitude">
+            <summary>
+                Minimum terrain height this clutter will be placed on.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.MaxAltitude">
+            <summary>
+                Maximum terrain height this clutter will be placed on.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.SnapToWater">
+            <summary>
+                Whether the y position will always be at water level.
+                Used before <see cref="P:Jotunn.Configs.ClutterConfig.RandomOffset"/>
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.RandomOffset">
+            <summary>
+                Random y offset of every individual prefab.
+                Calculated after <see cref="P:Jotunn.Configs.ClutterConfig.SnapToWater"/>.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.TerrainTilt">
+            <summary>
+                Whether this clutter will be rotated with the underlying terrain.
+                Otherwise it will always point straight up.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.OceanDepthCheck">
+            <summary>
+                Whether the clutter should check for ocean height.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.MinOceanDepth">
+            <summary>
+                Minimum ocean depth that is needed to place this clutter.
+                Needs <see cref="P:Jotunn.Configs.ClutterConfig.OceanDepthCheck"/> to be <c>true</c>.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.MaxOceanDepth">
+            <summary>
+                Maximum ocean depth to place this clutter.
+                Needs <see cref="P:Jotunn.Configs.ClutterConfig.OceanDepthCheck"/> to be <c>true</c>.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.InForest">
+            <summary>
+                Whether the clutter should check for forest thresholds.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.ForestThresholdMin">
+            <summary>
+                Minimum value of the forest fractal:<br/>
+                    0 - 1: inside the forest<br/>
+                    1: forest edge<br/>
+                    1 - infinity: outside the forest
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.ForestThresholdMax">
+            <summary>
+                Maximum value of the forest fractal:<br/>
+                    0 - 1: inside the forest<br/>
+                    1: forest edge<br/>
+                    1 - infinity: outside the forest
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.FractalScale">
+            <summary>
+                Size of a noise map used to determine if the clutter should be placed.
+                Set to 0 to disable and place it everywhere.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.FractalOffset">
+            <summary>
+                Offset of the noise map.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.FractalThresholdMin">
+            <summary>
+                Minimum value of the noise map that is needed to place the clutter.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.FractalThresholdMax">
+            <summary>
+                Maximum value of the noise map to place the clutter.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Configs.ClutterConfig.#ctor">
+            <summary>
+                Create a new <see cref="T:Jotunn.Configs.ClutterConfig"/>
+            </summary>
+        </member>
+        <member name="M:Jotunn.Configs.ClutterConfig.#ctor(ClutterSystem.Clutter)">
+            <summary>
+                Create a copy of the <see cref="T:ClutterSystem.Clutter"/>
+            </summary>
+            <param name="clutter"></param>
         </member>
         <member name="T:Jotunn.Configs.ConversionConfig">
             <summary>
@@ -1380,7 +1536,7 @@
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.Biome">
             <summary>
-                Biome to spawn in, can be bitwise or'ed toghether to allow multiple Biomes (Heightmap.Biome.Meadows | Heightmap.Biome.Forest)
+                Biome to spawn in, multiple Biomes can be allowed with <see cref="M:Jotunn.Managers.ZoneManager.AnyBiomeOf(Heightmap.Biome[])"/>
             </summary>
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.BiomeArea">
@@ -1395,7 +1551,7 @@
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.ForcePlacement">
             <summary>
-                Unlike what the name suggets, Valheim will attempt 50 times the normal amount of placements, almost guaranteeing that everything will be placed
+                Unlike what the name suggests, Valheim will attempt 50 times the normal amount of placements, almost guaranteeing that everything will be placed
             </summary>
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.Min">
@@ -1456,17 +1612,17 @@
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.ForestThresholdMin">
             <summary>
-                Minimum value of the forest fractal:
-                    0 - 1: inside the forest
-                    1: forest edge
+                Minimum value of the forest fractal:<br/>
+                    0 - 1: inside the forest<br/>
+                    1: forest edge<br/>
                     1 - infinity: outside the forest
             </summary>
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.ForestThresholdMax">
             <summary>
-                Maximum value of the forest fractal:
-                    0 - 1: inside the forest
-                    1: forest edge
+                Maximum value of the forest fractal:<br/>
+                    0 - 1: inside the forest<br/>
+                    1: forest edge<br/>
                     1 - infinity: outside the forest
             </summary>
         </member>
@@ -1516,16 +1672,6 @@
             </summary>
             <param name="zoneVegetation">ZoneVegetation to copy</param>
         </member>
-        <member name="M:Jotunn.DebugUtils.DebugHelper.ZoneSystem_SpawnLocation(ZoneSystem.ZoneLocation,ZoneSystem.SpawnMode)">
-            <summary>
-                Output custom location spawns
-            </summary>
-        </member>
-        <member name="T:Jotunn.DebugUtils.DebugHelper.Debug_isDebugBuild">
-            <summary>
-                Pretend to be a debugBuild :)
-            </summary>
-        </member>
         <member name="T:Jotunn.Entities.ConsoleCommand">
             <summary>
                 A custom console command.
@@ -1574,6 +1720,55 @@
             <returns>List of valid command options</returns>
         </member>
         <member name="M:Jotunn.Entities.ConsoleCommand.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Jotunn.Entities.CustomClutter">
+            <summary>
+                Main interface for adding custom clutter to the game.<br />
+                Clutter are client side only objects scattered on the ground.<br />
+                All custom clutter have to be wrapped inside this class to add it to Jötunns <see cref="T:Jotunn.Managers.ZoneManager"/>.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Entities.CustomClutter.Prefab">
+            <summary>
+                The prefab for this custom clutter.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Entities.CustomClutter.Clutter">
+            <summary>
+                Associated <see cref="T:ClutterSystem.Clutter"/> class.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Entities.CustomClutter.Name">
+            <summary>
+                Name of this custom clutter.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Entities.CustomClutter.FixReference">
+            <summary>
+                Indicator if references from <see cref="T:Jotunn.Entities.Mock`1"/>s will be replaced at runtime.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Entities.CustomClutter.#ctor(UnityEngine.GameObject,System.Boolean,Jotunn.Configs.ClutterConfig)">
+            <summary>
+                Custom clutter from a prefab.<br />
+                Can fix references for mocks.
+            </summary>
+            <param name="prefab">The prefab for this custom clutter.</param>
+            <param name="fixReference">If true references for <see cref="T:Jotunn.Entities.Mock`1"/> objects get resolved at runtime by Jötunn.</param>
+            <param name="config">The <see cref="T:Jotunn.Configs.ClutterConfig"/> for this custom vegation.</param>
+        </member>
+        <member name="M:Jotunn.Entities.CustomClutter.#ctor(UnityEngine.AssetBundle,System.String,System.Boolean,Jotunn.Configs.ClutterConfig)">
+            <summary>
+                Custom clutter from a prefab loaded from an <see cref="T:UnityEngine.AssetBundle"/>.<br />
+                Can fix references for mocks.
+            </summary>
+            <param name="assetBundle">A preloaded <see cref="T:UnityEngine.AssetBundle"/></param>
+            <param name="assetName">Name of the prefab in the bundle.</param>
+            <param name="fixReference">If true references for <see cref="T:Jotunn.Entities.Mock`1"/> objects get resolved at runtime by Jötunn.</param>
+            <param name="config">The <see cref="T:Jotunn.Configs.ClutterConfig"/> for this custom clutter.</param>
+        </member>
+        <member name="M:Jotunn.Entities.CustomClutter.ToString">
             <inheritdoc/>
         </member>
         <member name="T:Jotunn.Entities.CustomCreature">
@@ -2469,6 +2664,9 @@
             <param name="sender"></param>
             <param name="package"></param>
         </member>
+        <member name="M:Jotunn.Entities.CustomRPC.ToString">
+            <inheritdoc/>
+        </member>
         <member name="T:Jotunn.Entities.CustomStatusEffect">
             <summary>
                 Main interface for adding custom status effects to the game.<br />
@@ -2661,28 +2859,6 @@
             <param name="configurationEntry"></param>
             <returns></returns>
         </member>
-        <member name="M:Jotunn.ConfigEntryBaseExtension.IsWritable(BepInEx.Configuration.ConfigEntryBase)">
-            <summary>
-                Check, if this config entry is "writable"
-            </summary>
-            <param name="configurationEntry"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Jotunn.ConfigEntryBaseExtension.GetLocalValue(BepInEx.Configuration.ConfigEntryBase)">
-            <summary>
-                Get the local value of an admin config
-            </summary>
-            <param name="configurationEntry"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Jotunn.ConfigEntryBaseExtension.SetLocalValue(BepInEx.Configuration.ConfigEntryBase,System.Object)">
-            <summary>
-                Set the local value of an admin config
-            </summary>
-            <param name="configurationEntry"></param>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
         <member name="M:Jotunn.ConfigEntryBaseExtension.GetBoundButtonName(BepInEx.Configuration.ConfigEntryBase)">
             <summary>
                 Get bound button's name
@@ -2698,6 +2874,21 @@
             <param name="configurationEntry"></param>
             <returns></returns>
             <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Jotunn.ConfigEntryBaseExtension.GetLocalValue(BepInEx.Configuration.ConfigEntryBase)">
+            <summary>
+                Get the local value of an admin config
+            </summary>
+            <param name="configurationEntry"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.ConfigEntryBaseExtension.SetLocalValue(BepInEx.Configuration.ConfigEntryBase,System.Object)">
+            <summary>
+                Set the local value of an admin config
+            </summary>
+            <param name="configurationEntry"></param>
+            <param name="value"></param>
+            <returns></returns>
         </member>
         <member name="T:Jotunn.EventExtensions">
             <summary>
@@ -2981,7 +3172,7 @@
         </member>
         <member name="M:Jotunn.ZNetExtension.IsAdmin(ZNet,System.Int64)">
             <summary>
-                Determine if a peer uid is in the admin list on the current <see cref="T:ZNet"/>
+                Determine if a peer uid is in the admin list on the current <see cref="T:ZNet"/>. Only works on the server instance
             </summary>
             <param name="znet"></param>
             <param name="uid"></param>
@@ -3030,10 +3221,26 @@
             </summary>
             <param name="data">Data to log</param>
         </member>
-        <member name="M:Jotunn.Logger.LogError(System.Object)">
+        <member name="M:Jotunn.Logger.LogFatal(BepInEx.BepInPlugin,System.Object)">
             <summary>
                 Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Fatal"/> level.
+                This is used when the responsible mod is different from mod logging this message.
             </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
+            <param name="data">Data to log</param>
+        </member>
+        <member name="M:Jotunn.Logger.LogError(System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Error"/> level.
+            </summary>
+            <param name="data">Data to log</param>
+        </member>
+        <member name="M:Jotunn.Logger.LogError(BepInEx.BepInPlugin,System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Error"/> level.
+                This is used when the responsible mod is different from mod logging this message.
+            </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
             <param name="data">Data to log</param>
         </member>
         <member name="M:Jotunn.Logger.LogWarning(System.Object)">
@@ -3042,10 +3249,26 @@
             </summary>
             <param name="data">Data to log</param>
         </member>
+        <member name="M:Jotunn.Logger.LogWarning(BepInEx.BepInPlugin,System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Warning"/> level.
+                This is used when the responsible mod is different from mod logging this message.
+            </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
+            <param name="data">Data to log</param>
+        </member>
         <member name="M:Jotunn.Logger.LogMessage(System.Object)">
             <summary>
                 Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Message"/> level.
             </summary>
+            <param name="data">Data to log</param>
+        </member>
+        <member name="M:Jotunn.Logger.LogMessage(BepInEx.BepInPlugin,System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Message"/> level.
+                This is used when the responsible mod is different from mod logging this message.
+            </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
             <param name="data">Data to log</param>
         </member>
         <member name="M:Jotunn.Logger.LogInfo(System.Object)">
@@ -3054,10 +3277,26 @@
             </summary>
             <param name="data">Data to log</param>
         </member>
+        <member name="M:Jotunn.Logger.LogInfo(BepInEx.BepInPlugin,System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Info"/> level.
+                This is used when the responsible mod is different from mod logging this message.
+            </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
+            <param name="data">Data to log</param>
+        </member>
         <member name="M:Jotunn.Logger.LogDebug(System.Object)">
             <summary>
                 Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Debug"/> level.
             </summary>
+            <param name="data">Data to log</param>
+        </member>
+        <member name="M:Jotunn.Logger.LogDebug(BepInEx.BepInPlugin,System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Debug"/> level.
+                This is used when the responsible mod is different from mod logging this message.
+            </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
             <param name="data">Data to log</param>
         </member>
         <member name="T:Jotunn.Main">
@@ -3764,6 +4003,31 @@
                 Right Joystick press
             </summary>
         </member>
+        <member name="M:Jotunn.Managers.InputManager.GetGamepadKeyCode(Jotunn.Managers.InputManager.GamepadButton)">
+            <summary>
+                Translate a <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> to its <see cref="T:UnityEngine.KeyCode"/> value
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.InputManager.GetGamepadAxis(Jotunn.Managers.InputManager.GamepadButton)">
+            <summary>
+                Translate a <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> to its axis string value
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.InputManager.GetGamepadString(Jotunn.Managers.InputManager.GamepadButton)">
+            <summary>
+                Translate a <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> to its printable string value
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.InputManager.GetGamepadButton(System.String)">
+            <summary>
+                Translate an axis string to its <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> value
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.InputManager.GetGamepadButton(UnityEngine.KeyCode)">
+            <summary>
+                Translate a <see cref="T:UnityEngine.KeyCode"/> to its <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> value
+            </summary>
+        </member>
         <member name="P:Jotunn.Managers.InputManager.Instance">
             <summary>
                 Singleton instance
@@ -3926,12 +4190,13 @@
             </summary>
             <param name="prefab"><see cref="T:UnityEngine.GameObject"/> with an <see cref="T:ItemDrop"/> component to add to the <see cref="T:ObjectDB"/></param>
         </member>
-        <member name="M:Jotunn.Managers.ItemManager.RegisterItemInObjectDB(ObjectDB,UnityEngine.GameObject)">
+        <member name="M:Jotunn.Managers.ItemManager.RegisterItemInObjectDB(ObjectDB,UnityEngine.GameObject,BepInEx.BepInPlugin)">
             <summary>
                 Internal method for adding a prefab to a specific ObjectDB.
             </summary>
             <param name="objectDB"><see cref="T:ObjectDB"/> the prefab should be added to</param>
             <param name="prefab"><see cref="T:UnityEngine.GameObject"/> with an <see cref="T:ItemDrop"/> component to add</param>
+            <param name="sourceMod"><see cref="T:BepInEx.BepInPlugin"/> which created the prefab</param>
         </member>
         <member name="M:Jotunn.Managers.ItemManager.RegisterCustomRecipes(ObjectDB)">
             <summary>
@@ -4127,42 +4392,42 @@
             </summary>
         </member>
         <member name="F:Jotunn.Managers.LocalizationManager.Localizations">
-            <summary> 
+            <summary>
                 List where all data is collected.
             </summary>
         </member>
         <member name="F:Jotunn.Managers.LocalizationManager.TokenFirstChar">
-            <summary> 
+            <summary>
                 Your token must start with this character.
             </summary>
         </member>
         <member name="F:Jotunn.Managers.LocalizationManager.DefaultLanguage">
-            <summary> 
+            <summary>
                 Default language of the game.
             </summary>
         </member>
         <member name="F:Jotunn.Managers.LocalizationManager.TranslationsFolderName">
-            <summary> 
+            <summary>
                 Name of the folder that will hold the custom .json translations files.
             </summary>
         </member>
         <member name="F:Jotunn.Managers.LocalizationManager.CommunityTranslationFileName">
-            <summary> 
+            <summary>
                 Name of the community translation files that will be the first custom languages files loaded before any others.
             </summary>
         </member>
         <member name="F:Jotunn.Managers.LocalizationManager.ForbiddenChars">
-            <summary> 
+            <summary>
                 String of chars not allowed in a token string.
             </summary>
         </member>
         <member name="F:Jotunn.Managers.LocalizationManager.ForbiddenCharsArr">
-            <summary> 
+            <summary>
                 Array of chars not allowed in a token string.
             </summary>
         </member>
         <member name="P:Jotunn.Managers.LocalizationManager.Instance">
-            <summary> 
+            <summary>
                 The singleton instance of this manager.
             </summary>
         </member>
@@ -4172,7 +4437,7 @@
             </summary>
         </member>
         <member name="F:Jotunn.Managers.LocalizationManager.JotunnLocalization">
-            <summary> 
+            <summary>
                 Localizations for internal use.
             </summary>
         </member>
@@ -4185,12 +4450,12 @@
             </summary>
         </member>
         <member name="F:Jotunn.Managers.LocalizationManager.DoQuoteLineSplit">
-            <summary> 
+            <summary>
                 Call into unity's DoQuoteLineSplit.
             </summary>
         </member>
         <member name="M:Jotunn.Managers.LocalizationManager.Init">
-            <summary> 
+            <summary>
                 Initialize localization manager.
             </summary>
         </member>
@@ -4611,6 +4876,50 @@
             <param name="mockObjectType"></param>
             <returns>the real prefab</returns>
         </member>
+        <member name="M:Jotunn.Managers.MockManager.FixTextures(UnityEngine.Material)">
+            <summary>
+                Replaces all mock Textures with the real Texture
+            </summary>
+            <param name="material"></param>
+            <returns>true if no mocks were found or all mock could be resolved</returns>
+        </member>
+        <member name="M:Jotunn.Managers.MockManager.FixShader(UnityEngine.Material)">
+            <summary>
+                Replaces a potential mock Shader with the real Shader
+            </summary>
+            <param name="material"></param>
+            <returns>true if no mock was found or the mock could be resolved</returns>
+        </member>
+        <member name="T:Jotunn.Managers.MockSystem.MockResolveException">
+            <summary>
+                Exception that is thrown for a mock prefab, that could not be resolved to a real prefab.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.MockSystem.MockResolveException.FailedMockName">
+            <summary>
+                Name of the prefab that could not be resolved. Mock prefix is already removed.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.MockSystem.MockResolveException.MockType">
+            <summary>
+                Type of the prefab that could not be resolved.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.MockSystem.MockResolveException.#ctor(System.String,System.String)">
+            <summary>
+                Creates a new instance of the <see cref="T:Jotunn.Managers.MockSystem.MockResolveException" /> class.
+            </summary>
+            <param name="message"></param>
+            <param name="failedMockName"></param>
+        </member>
+        <member name="M:Jotunn.Managers.MockSystem.MockResolveException.#ctor(System.String,System.String,System.Type)">
+            <summary>
+                Creates a new instance of the <see cref="T:Jotunn.Managers.MockSystem.MockResolveException" /> class.
+            </summary>
+            <param name="message"></param>
+            <param name="failedMockName"></param>
+            <param name="mockType"></param>
+        </member>
         <member name="T:Jotunn.Managers.NetworkManager">
             <summary>
                 Manager handling all network related code
@@ -4861,6 +5170,11 @@
             <param name="pieceTable">Prefab or item name of the PieceTable</param>
             <param name="category">Optional category string, does not create new custom categories</param>
         </member>
+        <member name="M:Jotunn.Managers.PieceManager.RegisterPieceInPieceTable(UnityEngine.GameObject,System.String,System.String,BepInEx.BepInPlugin)">
+            <summary>
+                Internal method for adding a prefab to a piece table.
+            </summary>
+        </member>
         <member name="M:Jotunn.Managers.PieceManager.ReloadKnownRecipes(Player)">
             <summary>
                 Hook on <see cref="M:Player.OnSpawned"/> to refresh recipes for the custom items.
@@ -4896,12 +5210,12 @@
                 If you want to execute just once you will need to unregister from the event after execution.
             </summary>
         </member>
-        <member name="F:Jotunn.Managers.PrefabManager.PrefabContainer">
+        <member name="P:Jotunn.Managers.PrefabManager.PrefabContainer">
             <summary>
                 Container for custom prefabs in the DontDestroyOnLoad scene.
             </summary>
         </member>
-        <member name="F:Jotunn.Managers.PrefabManager.Prefabs">
+        <member name="P:Jotunn.Managers.PrefabManager.Prefabs">
             <summary>
                 Dictionary of all added custom prefabs by name hash.
             </summary>
@@ -4987,7 +5301,7 @@
             </summary>
             <param name="name">The name of the prefab to destroy</param>
         </member>
-        <member name="M:Jotunn.Managers.PrefabManager.RegisterAllToZNetScene(ZNetScene)">
+        <member name="M:Jotunn.Managers.PrefabManager.RegisterAllToZNetScene">
             <summary>
                 Register all custom prefabs to m_prefabs/m_namedPrefabs in <see cref="T:ZNetScene" />.
             </summary>
@@ -4999,7 +5313,7 @@
             </summary>
             <param name="gameObject"></param>
         </member>
-        <member name="M:Jotunn.Managers.PrefabManager.InvokeOnVanillaObjectsAvailable(ObjectDB,ObjectDB)">
+        <member name="M:Jotunn.Managers.PrefabManager.InvokeOnVanillaObjectsAvailable">
             <summary>
                 Safely invoke the <see cref="E:Jotunn.Managers.PrefabManager.OnVanillaPrefabsAvailable"/> event
             </summary>
@@ -5079,7 +5393,7 @@
             </summary>
             <param name="target">GameObject to render</param>
             <param name="callback">Callback for the generated <see cref="T:UnityEngine.Sprite"/></param>
-            <returns>If this is called on a headless server or when there is no active visual Mesh attached to the target, this method invokes the callback with null immediately and returns false.</returns>
+            <returns>If no active visual component is attached to the target or any child, this method invokes the callback with null immediately and returns false.</returns>
         </member>
         <member name="M:Jotunn.Managers.RenderManager.EnqueueRender(Jotunn.Managers.RenderManager.RenderRequest,System.Action{UnityEngine.Sprite})">
             <summary>
@@ -5087,7 +5401,7 @@
             </summary>
             <param name="renderRequest"></param>
             <param name="callback">Callback for the generated <see cref="T:UnityEngine.Sprite"/></param>
-            <returns>If this is called on a headless server or when there is no active visual Mesh attached to the target, this method invokes the callback with null immediately and returns false.</returns>
+            <returns>If no active visual component is attached to the target or any child, this method invokes the callback with null immediately and returns false.</returns>
         </member>
         <member name="M:Jotunn.Managers.RenderManager.EnqueueRender(UnityEngine.GameObject,System.Action{UnityEngine.Sprite},System.Int32,System.Int32)">
             <summary>
@@ -5105,7 +5419,7 @@
                 Create a <see cref="T:UnityEngine.Sprite"/> of the <paramref name="target"/>
             </summary>
             <param name="target">Can be a prefab or any existing GameObject in the world</param>
-            <returns>If this is called on a headless server or when there is no active visual Mesh attached to the target, this method returns null.</returns>
+            <returns>If no active visual component is attached to the target or any child, this method returns null.</returns>
         </member>
         <member name="M:Jotunn.Managers.RenderManager.Render(UnityEngine.GameObject,UnityEngine.Quaternion)">
             <summary>
@@ -5113,14 +5427,14 @@
             </summary>
             <param name="target">Can be a prefab or any existing GameObject in the world</param>
             <param name="rotation">Rotation while rendering of the GameObject. See <code>RenderManager.IsometricRotation</code> for example/></param>
-            <returns>If this is called on a headless server or when there is no active visual Mesh attached to the target, this method returns null.</returns>
+            <returns>If no active visual component is attached to the target or any child, this method returns null.</returns>
         </member>
         <member name="M:Jotunn.Managers.RenderManager.Render(Jotunn.Managers.RenderManager.RenderRequest)">
             <summary>
                 Create a <see cref="T:UnityEngine.Sprite"/> from a <see cref="T:Jotunn.Managers.RenderManager.RenderRequest"/>/>
             </summary>
             <param name="renderRequest"></param>
-            <returns>If this is called on a headless server or when there is no active visual Mesh attached to the target, this method returns null.</returns>
+            <returns>If no active visual component is attached to the target or any child, this method returns null.</returns>
         </member>
         <member name="M:Jotunn.Managers.RenderManager.SpawnSafe(Jotunn.Managers.RenderManager.RenderRequest)">
             <summary>
@@ -5187,11 +5501,6 @@
                 Create a new RenderRequest
             </summary>
             <param name="target">Object to be rendered. A copy of the provided GameObject will be created for rendering</param> 
-        </member>
-        <member name="M:Jotunn.Managers.SaveManager.#ctor">
-            <summary>
-                Hide .ctor
-            </summary>
         </member>
         <member name="T:Jotunn.Managers.SkillManager">
             <summary>
@@ -5287,6 +5596,36 @@
                 Manager's main init
             </summary>
         </member>
+        <member name="M:Jotunn.Managers.SynchronizationManager.RegisterCustomConfig(BepInEx.Configuration.ConfigFile)">
+            <summary>
+                Registers a non default config file for possible synchronisation with all clients.
+                Entries still need the IsAdminOnly attribute in order to be synchronized.<br />
+                The file path must be saved under the executing BepInEx config folder, see <see cref="P:BepInEx.Paths.ConfigPath" />.
+                This guarantees the same relative path for all clients.
+            </summary>
+            <param name="customFile">the file to synchronize</param>
+            <exception cref="T:System.ArgumentException">The config file is not saved under the BepInEx config folder</exception>
+            <exception cref="T:System.ArgumentException">The config file is already registered</exception>
+            <exception cref="T:System.ArgumentException">The config file is a default mod config and is already implicitly synchronized</exception>
+        </member>
+        <member name="M:Jotunn.Managers.SynchronizationManager.AddInitialSynchronization(Jotunn.Entities.CustomRPC,System.Func{ZNetPeer,ZPackage})">
+            <summary>
+                Add a <see cref="T:Jotunn.Entities.CustomRPC"/> and a method for generating a <see cref="T:ZPackage"/> to the manager.<br />
+                The RPC will be initiated on the server side after login to sync arbitrary data to the connecting client.
+                The package is guaranteed to be received before the client's connection is fully established and the player loads into the world.
+            </summary>
+            <param name="rpc">RPC to be called</param>
+            <param name="packageGenerator">Method generating the ZPackage payload, takes the client peer as its argument</param>
+        </member>
+        <member name="M:Jotunn.Managers.SynchronizationManager.AddInitialSynchronization(Jotunn.Entities.CustomRPC,System.Func{ZPackage})">
+            <summary>
+                Add a <see cref="T:Jotunn.Entities.CustomRPC"/> and a method for generating a <see cref="T:ZPackage"/> to the manager.<br />
+                The RPC will be initiated on the server side after login to sync arbitrary data to the connecting client.
+                The package is guaranteed to be received before the client's connection is fully established and the player loads into the world.
+            </summary>
+            <param name="rpc">RPC to be called</param>
+            <param name="packageGenerator">Method generating the ZPackage payload</param>
+        </member>
         <member name="M:Jotunn.Managers.SynchronizationManager.SceneManager_sceneLoaded(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)">
             <summary>
                 Init or reset admin and configuration state
@@ -5362,11 +5701,10 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:Jotunn.Managers.SynchronizationManager.FejdStartup_Awake(FejdStartup)">
+        <member name="M:Jotunn.Managers.SynchronizationManager.FejdStartup_Awake">
             <summary>
                 Initial cache the config values of dependent plugins and register ourself to config change events
             </summary>
-            <param name="self"></param>
         </member>
         <member name="M:Jotunn.Managers.SynchronizationManager.Config_ConfigReloaded(System.Object,System.EventArgs)">
             <summary>
@@ -5438,6 +5776,158 @@
                 stop the client from completing the login handshake with the server until ready.
             </summary>
         </member>
+        <member name="T:Jotunn.Managers.UndoManager">
+            <summary>
+                Manager for handling undo and redo actions in mods. Can handle multiple undo queues.<br/>
+                Mods can make their own UndoActions using the provided <see cref="T:Jotunn.Managers.UndoManager.IUndoAction">interface</see>
+                or use the default ones Jötunn provides in <see cref="T:Jotunn.Utils.UndoActions"/>.<br />
+                Undo queues get automatically reset on every login and logout.
+            </summary>
+        </member>
+        <member name="T:Jotunn.Managers.UndoManager.IUndoAction">
+            <summary>
+                Interface for actions which can be added to the undo queue.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.IUndoAction.Description">
+            <summary>
+                Description of this action to show on the queue's history.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.IUndoAction.Undo">
+            <summary>
+                Code to revert whatever was executed.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.IUndoAction.Redo">
+            <summary>
+                Code to replay whatever was executed.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.IUndoAction.UndoMessage">
+            <summary>
+                Message being displayed after a successful undo.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.IUndoAction.RedoMessage">
+            <summary>
+                Message being displayed after a successful redo.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.UndoManager.Instance">
+            <summary>
+                The singleton instance of this manager.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.#ctor">
+            <summary>
+                Hide .ctor
+            </summary>
+        </member>
+        <member name="F:Jotunn.Managers.UndoManager.Queues">
+            <summary>
+                Container to hold all Queues.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.Init">
+            <summary>
+                Registers all hooks.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.AddMessage(System.String,System.Boolean)">
+            <summary>
+                Add a message to the console or in the player HUD
+            </summary>
+            <param name="message"></param>
+            <param name="priority"></param>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.CreateQueue(System.String,System.Int32)">
+            <summary>
+                Manually create a new queue by name and return it. If the queue already exists
+                no new queue is created but the existing is returned.
+            </summary>
+            <param name="queueName">Global name of the queue</param>
+            <param name="maxSteps">Optionally define the max history capacity of a newly generated queue</param>
+            <returns>The <see cref="T:Jotunn.Managers.UndoManager.UndoQueue"/> with the given name</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.GetQueueNames">
+            <summary>
+                Get a list of all current undo queues.
+            </summary>
+            <returns>List of all registered queue names</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.GetQueue(System.String)">
+            <summary>
+                Get a queue by name. Creates a new queue if it does not exist.
+            </summary>
+            <param name="queueName">Global name of the queue</param>
+            <returns>The <see cref="T:Jotunn.Managers.UndoManager.UndoQueue"/> with the given name</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.Add(System.String,Jotunn.Managers.UndoManager.IUndoAction)">
+            <summary>
+                Add a new action to a queue.<br/>
+                If a queue with the provided name does not exist it is automatically created.
+            </summary>
+            <param name="queueName">Global name of the queue</param>
+            <param name="action">Mod provided action which can undo and redo whatever was executed</param>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.Undo(System.String)">
+            <summary>
+                Execute the undo action of the item at the queue's current position and decrease the position pointer.<br/>
+                If a queue with the provided name does not exist it is automatically created.
+            </summary>
+            <param name="queueName">Global name of the queue</param>
+            <returns>true if an action was undone, false if no actions exist or the action failed</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.Redo(System.String)">
+            <summary>
+                Execute the redo action of the item after the queue's current position and increase the position pointer.<br/>
+                If a queue with the provided name does not exist it is automatically created.
+            </summary>
+            <param name="queueName">Global name of the queue</param>
+            <returns>true if an action was redone, false if no actions exist or the action failed</returns>
+        </member>
+        <member name="T:Jotunn.Managers.UndoManager.UndoQueue">
+            <summary>
+                Undo queue implementation.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.Add(Jotunn.Managers.UndoManager.IUndoAction)">
+            <summary>
+                Add a new action to this queue.
+            </summary>
+            <param name="action">Mod provided action which can undo and redo whatever was executed</param>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.Undo">
+            <summary>
+                Execute the undo action of the item at the queue's current position and decrease the position pointer.
+            </summary>
+            <returns>true if an action was undone, false if no actions exist or the action failed</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.Redo">
+            <summary>
+                Execute the redo action of the item after the queue's current position and increase the position pointer.
+            </summary>
+            <returns>true if an action was redone, false if no actions exist or the action failed</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.Reset">
+            <summary>
+                Reset the queue's history and position pointer to its initial state.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.GetIndex">
+            <summary>
+                Get this queue's current position index, -1 when empty.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.GetHistory">
+            <summary>
+                Get a string array of this queue's current history.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.ToString">
+            <inheritdoc/>
+        </member>
         <member name="T:Jotunn.Managers.ZoneManager">
             <summary>
                 Manager for adding custom Locations and Vegetation.
@@ -5457,6 +5947,13 @@
             <summary>
                 Event that gets fired after the vanilla locations are in memory and available for cloning or editing.
                 Your code will execute every time before a new <see cref="T:ObjectDB"/> is copied (on every menu start).
+                If you want to execute just once you will need to unregister from the event after execution.
+            </summary>
+        </member>
+        <member name="E:Jotunn.Managers.ZoneManager.OnVanillaClutterAvailable">
+            <summary>
+                Event that gets fired after the vanilla clutter is in memory and available obtain.
+                Your code will execute every time before a new <see cref="T:ClutterSystem"/> is instantiated.
                 If you want to execute just once you will need to unregister from the event after execution.
             </summary>
         </member>
@@ -5541,6 +6038,21 @@
             <param name="baseName">name of the existing location to copy</param>
             <returns>A CustomLocation object with the cloned location prefab</returns>
         </member>
+        <member name="M:Jotunn.Managers.ZoneManager.RemoveCustomLocation(System.String)">
+            <summary>
+                Remove a CustomLocation by its name.<br />
+                Removes the CustomLocation from the manager.
+                Does not remove the location from any current ZoneSystem instance.
+            </summary>
+            <param name="name">Name of the CustomLocation to search for.</param>
+        </member>
+        <member name="M:Jotunn.Managers.ZoneManager.DestroyCustomLocation(System.String)">
+            <summary>
+                Destroy a CustomLocation by its name.<br />
+                Removes the CustomLocation from the manager and from the <see cref="T:ZoneSystem"/> if instantiated.
+            </summary>
+            <param name="name">Name of the CustomLocation to search for.</param>
+        </member>
         <member name="M:Jotunn.Managers.ZoneManager.AddCustomVegetation(Jotunn.Entities.CustomVegetation)">
             <summary>
                 Register a CustomVegetation to be added to the ZoneSystem
@@ -5560,9 +6072,63 @@
             <param name="name">Name of the ZoneVegetation to search for.</param>
             <returns>The existing ZoneVegetation, or null if none exists with given name</returns>
         </member>
+        <member name="M:Jotunn.Managers.ZoneManager.RemoveCustomVegetation(System.String)">
+            <summary>
+                Remove a CustomVegetation from this manager by its name.<br />
+                Does not remove it from any current ZoneSystem instance.
+            </summary>
+            <param name="name">Name of the CustomVegetation to search for.</param>
+        </member>
+        <member name="M:Jotunn.Managers.ZoneManager.AddCustomClutter(Jotunn.Entities.CustomClutter)">
+            <summary>
+                Register a CustomClutter to be added to the ClutterSystem
+            </summary>
+            <param name="customClutter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Managers.ZoneManager.GetClutter(System.String)">
+            <summary>
+                Get a Clutter by its name.<br /><br />
+                Search hierarchy:
+                <list type="number">
+                    <item>Custom Clutter with the exact name</item>
+                    <item>Vanilla Clutter with the exact name from <see cref="T:ClutterSystem"/></item>
+                </list>
+            </summary>
+            <param name="name">Name of the Clutter to search for.</param>
+            <returns>The existing Clutter, or null if none exists with given name</returns>
+        </member>
+        <member name="M:Jotunn.Managers.ZoneManager.RemoveCustomClutter(System.String)">
+            <summary>
+                Remove a CustomClutter from this manager by its name.<br />
+                Does not remove it from any current ClutterSystem instance.
+            </summary>
+            <param name="name">Name of the CustomClutter to search for.</param>
+        </member>
+        <member name="M:Jotunn.Managers.ZoneManager.RegisterLocationInZoneSystem(ZoneSystem.ZoneLocation)">
+            <summary>
+                Register a single ZoneLocaton in the current ZoneSystem.
+                Also adds the location prefabs to the <see cref="T:Jotunn.Managers.PrefabManager"/> and <see cref="T:ZNetScene"/> if necessary.<br />
+                No mock references are fixed.
+            </summary>
+            <param name="zoneLocation"><see cref="T:ZoneSystem.ZoneLocation"/> to add to the <see cref="T:ZoneSystem"/></param>
+        </member>
+        <member name="M:Jotunn.Managers.ZoneManager.RegisterLocationInZoneSystem(ZoneSystem,ZoneSystem.ZoneLocation,BepInEx.BepInPlugin)">
+            <summary>
+                Internal method for adding a ZoneLocation to a specific ZoneSystem.
+            </summary>
+            <param name="zoneSystem"><see cref="T:ZoneSystem"/> the location should be added to</param>
+            <param name="zoneLocation"><see cref="T:ZoneSystem.ZoneLocation"/> to add</param>
+            <param name="sourceMod"><see cref="T:BepInEx.BepInPlugin"/> which created the location</param>
+        </member>
         <member name="M:Jotunn.Managers.ZoneManager.InvokeOnVanillaLocationsAvailable">
             <summary>
                 Safely invoke OnVanillaLocationsAvailable
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.ZoneManager.InvokeOnVanillaClutterAvailable">
+            <summary>
+                Safely invoke OnVanillaClutterAvailable
             </summary>
         </member>
         <member name="T:Jotunn.GUI.ColorPicker">
@@ -6063,6 +6629,11 @@
             <param name="assetPath"></param>
             <returns></returns>
         </member>
+        <member name="T:Jotunn.Utils.BepInExUtils">
+            <summary>
+                Helper methods to access BepInEx plugin information
+            </summary>
+        </member>
         <member name="F:Jotunn.Utils.BepInExUtils.Plugins">
             <summary>
                 Cached plugin list
@@ -6077,6 +6648,12 @@
         <member name="M:Jotunn.Utils.BepInExUtils.GetDependentPlugins(System.Boolean)">
             <summary>
                 Get a dictionary of loaded plugins which depend on Jotunn.
+            </summary>
+            <returns>Dictionary of plugin GUID and <see cref="T:BepInEx.BaseUnityPlugin"/></returns>
+        </member>
+        <member name="M:Jotunn.Utils.BepInExUtils.GetPlugins(System.Boolean)">
+            <summary>
+                Get a dictionary of all plugins loaded by BepInEx
             </summary>
             <returns>Dictionary of plugin GUID and <see cref="T:BepInEx.BaseUnityPlugin"/></returns>
         </member>
@@ -6416,7 +6993,7 @@
             <param name="sender"></param>
             <param name="data"></param>
         </member>
-        <member name="M:Jotunn.Utils.ModCompatibility.ShowModCompatibilityErrorMessage">
+        <member name="M:Jotunn.Utils.ModCompatibility.ShowModCompatibilityErrorMessage(System.String)">
             <summary>
                 Create and show mod compatibility error message
             </summary>
@@ -6429,25 +7006,43 @@
             <param name="clientData">client data</param>
             <returns></returns>
         </member>
-        <member name="M:Jotunn.Utils.ModCompatibility.ClientVersionLowerMessage(Jotunn.Utils.ModModule)">
-            <summary>
-                Generate message for client's mod version lower than server's version
-            </summary>
-            <param name="module">Module version data</param>
-            <returns></returns>
-        </member>
-        <member name="M:Jotunn.Utils.ModCompatibility.ServerVersionLowerMessage(Jotunn.Utils.ModModule,Jotunn.Utils.ModModule)">
-            <summary>
-                Generate message for server's mod version lower than client's version
-            </summary>
-            <param name="module">server module data</param>
-            <param name="clientModule">client module data</param>
-            <returns></returns>
-        </member>
         <member name="M:Jotunn.Utils.ModCompatibility.GetEnforcableMods">
             <summary>
                 Get module.
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.ModModule.IsNeededOnServer">
+            <summary>
+                Module must at least be loaded on the server
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.ModModule.IsNeededOnClient">
+            <summary>
+                Module must at least be loaded on the client
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.ModModule.IsNotEnforced">
+            <summary>
+               Module is not enforced by the server or client
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.ModModule.OnlyVersionCheck">
+            <summary>
+                Module is not enforced, only version check if both client and server have it
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.ModModule.IsLowerVersion(Jotunn.Utils.ModModule,Jotunn.Utils.ModModule,Jotunn.Utils.VersionStrictness)">
+            <summary>
+                Checks if the compare module has a lower version then the other base module
+            </summary>
+            <param name="baseModule"></param>
+            <param name="compareModule"></param>
+            <param name="strictness"></param>
             <returns></returns>
         </member>
         <member name="T:Jotunn.Utils.ModuleVersionData">
@@ -6625,7 +7220,7 @@
         </member>
         <member name="M:Jotunn.Utils.ModRegistry.GetMods(System.Boolean)">
             <summary>
-                Get all loaded mod's metadata
+                Get all loaded mod's metadata which are depending on Jötunn
             </summary>
             <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Jotunn.Utils.ModRegistry.ModInfo"/> for all loaded mods</returns>
         </member>
@@ -6746,6 +7341,19 @@
             <param name="modGuid">GUID of the mod</param>
             <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Jotunn.Entities.CustomVegetation"/> from a specific mod</returns>
         </member>
+        <member name="M:Jotunn.Utils.ModRegistry.GetClutter">
+            <summary>
+                Get all added <see cref="T:Jotunn.Entities.CustomClutter">CustomClutter</see>
+            </summary>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Jotunn.Entities.CustomClutter"/> from all loaded mods</returns>
+        </member>
+        <member name="M:Jotunn.Utils.ModRegistry.GetClutter(System.String)">
+            <summary>
+                Get all added <see cref="T:Jotunn.Entities.CustomClutter">CustomClutter</see> of a mod by GUID
+            </summary>
+            <param name="modGuid">GUID of the mod</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Jotunn.Entities.CustomClutter"/> from a specific mod</returns>
+        </member>
         <member name="M:Jotunn.Utils.ModRegistry.GetCreatures">
             <summary>
                 Get all added <see cref="T:Jotunn.Entities.CustomCreature">CustomCreatures</see>
@@ -6848,6 +7456,11 @@
         <member name="P:Jotunn.Utils.ModRegistry.ModInfo.Vegetation">
             <summary>
                 Custom Vegetation added by that mod
+            </summary>
+        </member>
+        <member name="P:Jotunn.Utils.ModRegistry.ModInfo.Clutter">
+            <summary>
+                Custom Clutter added by that mod
             </summary>
         </member>
         <member name="P:Jotunn.Utils.ModRegistry.ModInfo.Creatures">
@@ -7084,6 +7697,198 @@
             </summary>
             <param name="gameObject"></param>
         </member>
+        <member name="T:Jotunn.Utils.UndoActions">
+            <summary>
+                Pre-defined actions to use with the <see cref="T:Jotunn.Managers.UndoManager"/>.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoHelper.IsValid(ZNetView)">
+            <summary>Helper to check object validity.</summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoHelper.IsValid(ZDO)">
+            <summary>Helper to check object validity.</summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.UndoCreate">
+            <summary>
+                "Create" action for the <see cref="T:Jotunn.Managers.UndoManager"/>. Can undo and redo ZDO creation.
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.UndoCreate.Data">
+            <summary>
+                Current ZDO data of this action.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.#ctor(System.Collections.Generic.IEnumerable{ZDO})">
+            <summary>
+                Create new undo data for ZDO creation operations. Clones all ZDO data to prevent NREs.
+            </summary>
+            <param name="data">Enumerable of ZDOs which were created.</param>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.Description">
+            <summary>
+                Description of the executed action.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.Undo">
+            <summary>
+                Remove stored ZDOs again.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.UndoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.Redo">
+            <summary>
+                Recreate stored ZDOs again.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.RedoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.UndoRemove">
+            <summary>
+                "Remove" action for the <see cref="T:Jotunn.Managers.UndoManager"/>. Can undo and redo ZDO removal.
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.UndoRemove.Data">
+            <summary>
+                Current ZDO data of this action.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.#ctor(System.Collections.Generic.IEnumerable{ZDO})">
+            <summary>
+                Create new undo data for ZDO removal operations. Clones all ZDO data to prevent NREs.
+            </summary>
+            <param name="data">Enumerable of ZDOs which were removed.</param>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.Description">
+            <summary>
+                Description of the executed action.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.Undo">
+            <summary>
+                Recreate stored ZDOs again.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.UndoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.Redo">
+            <summary>
+                Remove stored ZDOs again.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.RedoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.HeightUndoData">
+            <summary>
+                Heightmap data wrapper
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.HeightUndoData.Smooth">
+            <summary>
+                "Smooth" member of the heightmap
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.HeightUndoData.Level">
+            <summary>
+                "Level" member of the heightmap
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.HeightUndoData.Index">
+            <summary>
+                "Index" member of the heightmap
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.HeightUndoData.HeightModified">
+            <summary>
+                "HeightModified" member of the heightmap
+            </summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.PaintUndoData">
+            <summary>
+                Paint data wrapper
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.PaintUndoData.PaintModified">
+            <summary>
+                "PaintModified" member of the heightmap paint
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.PaintUndoData.Paint">
+            <summary>
+                "Paint" member of the heightmap paint
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.PaintUndoData.Index">
+            <summary>
+                "Index" member of the heightmap paint
+            </summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.TerrainUndoData">
+            <summary>
+                Heightmap and Paint data collection
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.TerrainUndoData.Heights">
+            <summary>
+                Collection of <see cref="T:Jotunn.Utils.UndoActions.HeightUndoData"/>
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.TerrainUndoData.Paints">
+            <summary>
+                Collection of <see cref="T:Jotunn.Utils.UndoActions.PaintUndoData"/>
+            </summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.UndoTerrain">
+            <summary>
+                "Terrain" action for the <see cref="T:Jotunn.Managers.UndoManager"/>. Can undo and redo terrain modifications.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.#ctor(System.Collections.Generic.Dictionary{UnityEngine.Vector3,Jotunn.Utils.UndoActions.TerrainUndoData},System.Collections.Generic.Dictionary{UnityEngine.Vector3,Jotunn.Utils.UndoActions.TerrainUndoData},UnityEngine.Vector3,System.Single)">
+            <summary>
+                Create new undo data for terrain modifications.
+            </summary>
+            <param name="before">Terrain state before modification</param>
+            <param name="after">Terrain state after modification</param>
+            <param name="position">Position of the terrain modification center</param>
+            <param name="radius">Radius of the terrain modification</param>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.Description">
+            <summary>
+                Description of the executed action.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.Undo">
+            <summary>
+                Sets terrain data to the stored values of the "before" state.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.UndoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.Redo">
+            <summary>
+                Sets terrain data to the stored values of the "after" state.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.RedoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
         <member name="T:Jotunn.Utils.WeightedList`2">
             <summary>
                 Like a list but stores elements in the order specified by the weight.
@@ -7185,6 +7990,12 @@
             <summary>
                 When a config is locked, cache the local value
             </summary>
+        </member>
+        <member name="M:ConfigurationManagerAttributes.SetFromAttributes(System.Object[])">
+            <summary>
+                Set config values from an attribute array
+            </summary>
+            <param name="attribs">Array of attribute values</param>
         </member>
         <member name="T:SimpleJson.JsonArray">
             <summary>
