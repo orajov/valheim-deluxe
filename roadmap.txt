@@ -3,16 +3,13 @@
     - Epic Loot
         + remove glowing
         - remove health critical
+        - craft shard
     - Skyheim
         - remove runes
     - BetterTrader
         - configuration
 #####################################
-- NPC
-    + RRRCore
-    + RRRNpcs
-    + SpawnThat
-    + YamlDotNet
+- NPC               
     - Alltameable
         - goblin
         - lycans
