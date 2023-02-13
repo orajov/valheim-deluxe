@@ -2,13 +2,13 @@
 - EpicValheim
     - Epic Loot
         + remove glowing
-        + remove health critical
-        - craft shard
+        - remove health critical
+        + craft shard
         + remove craft legendary rune
-        + remove weightless
-        + remove carry weight
-        + remove indestructible
-        + remove cape armor
+        - remove weightless
+        - remove carry weight
+        - remove indestructible
+        - remove cape armor
     - BetterTrader
         - configuration
 #####################################
@@ -33,11 +33,11 @@
         + remove Cargo Carevel
 #####################################
 + Utility
+    + TrashCan
     + WackysDatabase
     + EquipmentAndQuickSlots
     + UseEquipmentInWater
     + RepairAll
-    + TrashCan
     + InstantMonsterDrop
     + FloorsAreRoofs
     + BetterLadders
@@ -51,6 +51,7 @@
     + TeleportEverything
     + DualWield
     + Durability
+    + MaxDungeonRooms
 #####################################
 + Tech
     + BetterNetworking
