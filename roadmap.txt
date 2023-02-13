@@ -2,39 +2,40 @@
 - EpicValheim
     - Epic Loot
         + remove glowing
-        - remove health critical
+        + remove health critical
         - craft shard
-    - Skyheim
-        - remove runes
+        + remove craft legendary rune
+        + remove weightless
+        + remove carry weight
+        + remove indestructible
+        + remove cape armor
     - BetterTrader
         - configuration
 #####################################
-- NPC               
+- NPC    
+    + CLLC           
     - Alltameable
         - goblin
         - lycans
 #####################################
-+ Skills
+- Skills
     + Cartogaphy
     + Blacksmithing
     + Evasion
+    - Spearfishing
 #####################################
-- Building
++ Building
     + Stacked bars
-    - Odin ship
-        - remove Big Cargo ship
-        - remove Fast Ship Skuldelev
-        - remove Cargo Ship
-        - remove Fishing Canoe
-        - remove Cargo Carevel
-    - Goblin structures
-        - costs tweak
+    + Odin ship
+        + remove War Ship Skuldelev
+        + remove Cargo Ship
+        + remove Fishing Canoe
+        + remove Cargo Carevel
 #####################################
 + Utility
     + WackysDatabase
     + EquipmentAndQuickSlots
     + UseEquipmentInWater
-    + EasyTranslate
     + RepairAll
     + TrashCan
     + InstantMonsterDrop
@@ -47,6 +48,9 @@
     + MultiCraft
     + LessFoodDegradation
     + ImFRIENDLY
+    + TeleportEverything
+    + DualWield
+    + Durability
 #####################################
 + Tech
     + BetterNetworking

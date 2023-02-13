@@ -1,0 +1,19 @@
+{
+    "name": "goblin_roof_45d_CLONED",
+    "m_name": "Goblin Roof 45",
+    "m_description": "45 Degree roof from a goblin hut",
+    "clone": false,
+    "clonePrefabName": "",
+    "cloneMaterial": "",
+    "craftingStation": "$piece_workbench",
+    "piecehammer": "Hammer",
+    "piecehammerCategory": "Building",
+    "minStationLevel": 1,
+    "amount": 1,
+    "disabled": false,
+    "adminonly": false,
+    "reqs": [
+        "FineWood:5:1:True",
+        "DeerHide:5:1:True"
+    ]
+}

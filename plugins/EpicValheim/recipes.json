@@ -356,19 +356,14 @@
       ]
     },
     {
-      "name": "Recipe_DragonTearRunestone",
-      "item": "RunestoneLegendary",
+      "name": "Recipe_LegendaryShard",
+      "item": "ShardLegendary",
       "craftingStation": "piece_workbench",
       "resources": [
-        { "item": "DragonTear", "amount": 3 }
-      ]
-    },
-    {
-      "name": "Recipe_YagluthThingRunestone",
-      "item": "RunestoneLegendary",
-      "craftingStation": "piece_workbench",
-      "resources": [
-        { "item": "YagluthDrop", "amount": 1 }
+        { "item": "Crystal", "amount": 1 },
+        { "item": "EssenceLegendary", "amount": 1 },
+        { "item": "ReagentLegendary", "amount": 1 },
+        { "item": "DustLegendary", "amount": 1 }
       ]
     }
   ]

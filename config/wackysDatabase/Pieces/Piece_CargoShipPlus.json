@@ -1,0 +1,21 @@
+{
+    "name": "CargoShipPlus",
+    "m_name": "$piece_CargoShipPlus",
+    "m_description": "$piece_CargoShipPlus_description",
+    "clone": false,
+    "clonePrefabName": "",
+    "cloneMaterial": "",
+    "craftingStation": "$piece_workbench",
+    "piecehammer": "Hammer",
+    "piecehammerCategory": "Misc",
+    "minStationLevel": 1,
+    "amount": 1,
+    "disabled": true,
+    "adminonly": false,
+    "reqs": [
+        "DeerHide:20:1:True",
+        "FineWood:40:1:True",
+        "IronNails:100:1:True",
+        "ElderBark:40:1:True"
+    ]
+}

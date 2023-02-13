@@ -1,0 +1,21 @@
+{
+    "name": "CargoCaravel",
+    "m_name": "$piece_CargoCaravel",
+    "m_description": "$piece_CargoCaravel_description",
+    "clone": false,
+    "clonePrefabName": "",
+    "cloneMaterial": "",
+    "craftingStation": "$piece_workbench",
+    "piecehammer": "Hammer",
+    "piecehammerCategory": "Misc",
+    "minStationLevel": 1,
+    "amount": 1,
+    "disabled": true,
+    "adminonly": false,
+    "reqs": [
+        "DeerHide:20:1:True",
+        "FineWood:40:1:True",
+        "IronNails:120:1:True",
+        "Wood:100:1:True"
+    ]
+}

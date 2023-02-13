@@ -1,0 +1,19 @@
+{
+    "name": "goblin_woodwall_2m_ribs_CLONED",
+    "m_name": "Goblin RibWall",
+    "m_description": "A cage of Lox ribs to use as a fence",
+    "clone": false,
+    "clonePrefabName": "",
+    "cloneMaterial": "",
+    "craftingStation": "$piece_workbench",
+    "piecehammer": "Hammer",
+    "piecehammerCategory": "Building",
+    "minStationLevel": 1,
+    "amount": 1,
+    "disabled": false,
+    "adminonly": false,
+    "reqs": [
+        "FineWood:5:1:True",
+        "BoneFragments:5:1:True"
+    ]
+}
