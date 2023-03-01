@@ -11,23 +11,32 @@
         - remove cape armor
     + BetterTrader
         + configuration
+    + Extensions
+        + SagesVault
 #####################################
 - NPC    
+    + Villagers
+        + RRRCore
+        + RRRNpcs
+        + SpwanThat
+        + YamlDotNet
     - CLLC  
         - config         
     - Alltameable
         - goblin
         - lycans
 #####################################
-- Skills
++ Skills
     + Cartogaphy
     + Blacksmithing
     + Evasion
-    - Spearfishing
+    + Spearfishing
 #####################################
-- Building
++ Building
     + Stacked bars
-    - MoreGates
+    + MoreGates
+    + OdinCampsite
+    + OdinArchitect
     + Odin ship
         + remove War Ship Skuldelev
         + remove Cargo Ship
@@ -58,4 +67,3 @@
     + BetterNetworking
     + SmoothSave
     - ServerCharacters
-    - AzuAntiCheat
