@@ -358,12 +358,29 @@
     {
       "name": "Recipe_LegendaryShard",
       "item": "ShardLegendary",
-      "craftingStation": "piece_workbench",
+      "craftingStation": "",
       "resources": [
         { "item": "Crystal", "amount": 1 },
         { "item": "EssenceLegendary", "amount": 1 },
         { "item": "ReagentLegendary", "amount": 1 },
         { "item": "DustLegendary", "amount": 1 }
+      ]
+    },
+    {
+      "name": "Recipe_Chain",
+      "item": "Chain",
+      "craftingStation": "forge",
+      "resources": [
+        { "item": "Iron", "amount": 3 }
+      ]
+    },
+    {
+      "name": "Recipe_Tar",
+      "item": "Tar",
+      "craftingStation": "forge",
+      "resources": [
+        { "item": "Coal", "amount": 5 },
+        { "item": "Resin", "amount": 5 }
       ]
     }
   ]
