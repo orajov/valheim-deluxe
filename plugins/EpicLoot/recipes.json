@@ -379,7 +379,7 @@
       "item": "Tar",
       "craftingStation": "forge",
       "resources": [
-        { "item": "Coal", "amount": 5 },
+        { "item": "Coal", "amount": 1 },
         { "item": "Resin", "amount": 5 }
       ]
     }
