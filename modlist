@@ -1,0 +1,58 @@
+#####################################
+- EpicValheim
+    - Epic Loot
+        + remove glowing
+        + remove health critical
+        + craft shard
+        - remove craft legendary runes
+        + remove weightless
+        + remove carry weight
+        + tweak indestructible
+        + remove cape armor
+    + BetterTrader
+        + configuration
+    - Extensions
+        - SagesVault
+        - JudesEquipment
+        - ChaosArmor
+        - EikthyrsRetribution
+#####################################
+- NPC    
+    - Villagers
+        - RRRCore
+        - RRRNpcs
+        - SpwanThat
+        - YamlDotNet
+    - CLLC  
+        - config         
+    - Alltameable
+        - goblin
+        - lycans
+#####################################
+- Skills
+    - Cartogaphy
+    + CarryWeight
+    + Blacksmithing
+    + Evasion
+    + Spearfishing
+#####################################
+- Content
+    + MoreGates
+    - OdinCampsite
+    - OdinArchitect
+#####################################
++ Utility
+    + TrashCan
+    + EquipmentAndQuickSlots
+    + UseEquipmentInWater
+    + RepairAll
+    + FloorsAreRoofs
+    + BetterLadders
+    + SpeedyPaths
+    + MistBeGone
+    + MultiUserChest
+    + ImFRIENDLY
+    + TeleportEverything
+#####################################
++ Tech
+    + SmoothSave

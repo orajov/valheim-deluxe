@@ -2259,6 +2259,43 @@
       ]
     },
     {
+      "Type" : "ModifyDurability",
+      "DisplayText" : "$mod_epicloot_me_modifydurability_display",
+      "Description" : "$mod_epicloot_me_modifydurability_desc",
+      "Requirements" : {
+        "ExclusiveEffectTypes" : [
+          "Indestructible"
+        ],
+        "AllowedItemTypes" : [
+          "Shield",
+          "Tool"
+        ],
+        "AllowedRarities" : [
+          "Magic",
+          "Rare",
+          "Epic"
+        ],
+        "ItemUsesDurability" : true
+      },
+      "ValuesPerRarity" : {
+        "Magic" : { "MinValue" : 50, "MaxValue" : 100, "Increment" : 5 },
+        "Rare" : { "MinValue" : 50, "MaxValue" : 100, "Increment" : 5 },
+        "Epic" : { "MinValue" : 50, "MaxValue" : 100, "Increment" : 5 }
+      },
+      "SelectionWeight" : 1,
+      "Prefixes": [
+        "$mod_epicloot_me_modifydurability_prefix1",
+        "$mod_epicloot_me_modifydurability_prefix2",
+        "$mod_epicloot_me_modifydurability_prefix3"
+      ],
+      "Suffixes": [
+        "$mod_epicloot_me_modifydurability_suffix1",
+        "$mod_epicloot_me_modifydurability_suffix2",
+        "$mod_epicloot_me_modifydurability_suffix3",
+        "$mod_epicloot_me_modifydurability_suffix4"
+      ]
+    },
+    {
       "Type" : "Luck",
       "DisplayText" : "$mod_epicloot_me_luck_display",
       "Description" : "$mod_epicloot_me_luck_desc",
@@ -2340,9 +2377,6 @@
         "$mod_epicloot_me_slow_suffix1"
       ]
     },
-
-    // Set Effects
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     {
       "Type" : "Bulwark",
       "DisplayText" : "$mod_epicloot_set_me_bulwark",
