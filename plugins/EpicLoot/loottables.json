@@ -127,7 +127,10 @@
       "Name": "Tier0Armor",
       "Loot": [
         { "Item": "ArmorRagsLegs",  "Rarity": [ 97, 2, 1, 0 ] },
-        { "Item": "ArmorRagsChest", "Rarity": [ 97, 2, 1, 0 ] }
+        { "Item": "ArmorRagsChest", "Rarity": [ 97, 2, 1, 0 ] },
+        { "Item": "T0ChaosPlateHelm",  "Rarity": [ 97, 2, 1, 0 ] },
+        { "Item": "T0ChaosPlateArmor",  "Rarity": [ 97, 2, 1, 0 ] },
+        { "Item": "T0ChaosPlateLegs",  "Rarity": [ 97, 2, 1, 0 ] }
       ]
     },
     {
@@ -168,7 +171,10 @@
         { "Item": "ArmorNobleHelmet",     "Rarity": [ 94, 3, 2, 1 ] },
         { "Item": "ArmorNobleChest",     "Rarity": [ 94, 3, 2, 1 ] },
         { "Item": "ArmorNobleLegs",     "Rarity": [ 94, 3, 2, 1 ] },
-        { "Item": "ArmorNobleCape",     "Rarity": [ 94, 3, 2, 1 ] }
+        { "Item": "ArmorNobleCape",     "Rarity": [ 94, 3, 2, 1 ] },
+        { "Item": "T1ChaosPlateArmor",     "Rarity": [ 94, 3, 2, 1 ] },
+        { "Item": "T1ChaosPlateHelm",     "Rarity": [ 94, 3, 2, 1 ] },
+        { "Item": "T1ChaosPlateLegs",     "Rarity": [ 94, 3, 2, 1 ] }
       ]
     },
     {
@@ -231,7 +237,10 @@
         { "Item": "ArmorBarbarianCapeJD",     "Rarity": [ 80, 14, 4, 2 ] },
         { "Item": "ArmorWarriorHelmet",     "Rarity": [ 80, 14, 4, 2 ] },
         { "Item": "ArmorWarriorChest",     "Rarity": [ 80, 14, 4, 2 ] },
-        { "Item": "ArmorWarriorLegs",     "Rarity": [ 80, 14, 4, 2 ] }
+        { "Item": "ArmorWarriorLegs",     "Rarity": [ 80, 14, 4, 2 ] },
+        { "Item": "T2ChaosPlateArmor",     "Rarity": [ 80, 14, 4, 2 ] },
+        { "Item": "T2ChaosPlateHelm",     "Rarity": [ 80, 14, 4, 2 ] },
+        { "Item": "T2ChaosPlateLegs",     "Rarity": [ 80, 14, 4, 2 ] }
       ]
     },
     {
@@ -285,7 +294,10 @@
         { "Item": "ArmorPlateIronHelmetJD",     "Weight": 1, "Rarity": [ 38, 50, 8, 4 ] },
         { "Item": "ArmorPlateIronChestJD",     "Weight": 1, "Rarity": [ 38, 50, 8, 4 ] },
         { "Item": "ArmorPlateIronLegsJD",     "Weight": 1, "Rarity": [ 38, 50, 8, 4 ] },
-        { "Item": "ArmorPlateCape",     "Weight": 1, "Rarity": [ 38, 50, 8, 4 ] }
+        { "Item": "ArmorPlateCape",     "Weight": 1, "Rarity": [ 38, 50, 8, 4 ] },
+        { "Item": "ChaosPlateArmorBody",     "Weight": 1, "Rarity": [ 38, 50, 8, 4 ] },
+        { "Item": "ChaosPlateHelm",     "Weight": 1, "Rarity": [ 38, 50, 8, 4 ] },
+        { "Item": "ChaosPlateLegs",     "Weight": 1, "Rarity": [ 38, 50, 8, 4 ] }
       ]
     },
     {
@@ -336,7 +348,11 @@
         { "Item": "CapeWolf",           "Weight": 1, "Rarity": [ 5, 35, 50, 20 ] },
         { "Item": "ArmorDragonslayerHelmet",           "Weight": 1, "Rarity": [ 5, 35, 50, 20 ] },
         { "Item": "ArmorDragonslayerChest",           "Weight": 1, "Rarity": [ 5, 35, 50, 20 ] },
-        { "Item": "ArmorDragonslayerLegs",           "Weight": 1, "Rarity": [ 5, 35, 50, 20 ] }
+        { "Item": "ArmorDragonslayerLegs",           "Weight": 1, "Rarity": [ 5, 35, 50, 20 ] },
+        { "Item": "EliteChaosPlateArmor",           "Weight": 1, "Rarity": [ 5, 35, 50, 20 ] },
+        { "Item": "EliteChaosPlateHelm",           "Weight": 1, "Rarity": [ 5, 35, 50, 20 ] },
+        { "Item": "ChaosPlateHelmAlt",           "Weight": 1, "Rarity": [ 5, 35, 50, 20 ] },
+        { "Item": "EliteChaosPlateLegs",           "Weight": 1, "Rarity": [ 5, 35, 50, 20 ] }
       ]
     },
     {
@@ -386,9 +402,11 @@
         { "Item": "ArmorSerpentHelmet",            "Weight": 1, "Rarity": [ 0, 15, 60, 25 ] },
         { "Item": "ArmorSerpentChest",            "Weight": 1, "Rarity": [ 0, 15, 60, 25 ] },
         { "Item": "ArmorSerpentLegs",            "Weight": 1, "Rarity": [ 0, 15, 60, 25 ] },
-        { "Item": "ArmorSerpentCape",            "Weight": 1, "Rarity": [ 0, 15, 60, 25 ] }
-
-      
+        { "Item": "ArmorSerpentCape",            "Weight": 1, "Rarity": [ 0, 15, 60, 25 ] },
+        { "Item": "EliteChaosPlateArmorTzeentch",            "Weight": 1, "Rarity": [ 0, 15, 60, 25 ] },
+        { "Item": "EliteChaosPlateHelmTzeentch",            "Weight": 1, "Rarity": [ 0, 15, 60, 25 ] },
+        { "Item": "ChaosPlateHelmAltTzeentch",            "Weight": 1, "Rarity": [ 0, 15, 60, 25 ] },
+        { "Item": "EliteChaosPlateLegsTzeentch",            "Weight": 1, "Rarity": [ 0, 15, 60, 25 ] }      
       ]
     },
     {
