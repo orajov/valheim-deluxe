@@ -1,20 +1,19 @@
 #####################################
-- EpicValheim
-    - Epic Loot
++ EpicValheim
+    + Epic Loot
         + remove glowing
         + remove health critical
         + craft shard
-        - remove craft legendary runes
         + remove weightless
         + remove carry weight
         + tweak indestructible
         + remove cape armor
     + BetterTrader
         + configuration
-    - Extensions
-        - SagesVault
-        - JudesEquipment
-        - ChaosArmor
+    + Extensions
+        + SagesVault
+        + JudesEquipment
+        + ChaosArmor
 #####################################
 - NPC    
     - Villagers
@@ -22,8 +21,8 @@
         - RRRNpcs
         - SpwanThat
         - YamlDotNet
-    - CLLC  
-        - config         
+    - CLLC
+        - config
     - Alltameable
         - goblin
         - lycans
@@ -39,9 +38,10 @@
     + MoreGates
     - OdinCampsite
     - OdinArchitect
+    + OdinShip
+    + TrashCan
 #####################################
 + Utility
-    + TrashCan
     + EquipmentAndQuickSlots
     + UseEquipmentInWater
     + RepairAll
@@ -49,9 +49,6 @@
     + BetterLadders
     + SpeedyPaths
     + MistBeGone
-    + MultiUserChest
-    + ImFRIENDLY
-    + TeleportEverything
 #####################################
 + Tech
     + SmoothSave
