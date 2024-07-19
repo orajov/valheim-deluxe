@@ -6,7 +6,7 @@
     + JudesEquipment
     + ChaosArmor
 - NPC    
-    + Alltameable
+    - Alltameable
         - add goblins
         - add lycans
 + Utility
@@ -17,3 +17,6 @@
     + SpeedyPaths
     + MistBeGone
     + TargetPortal
++ Support
+    + BenInEx
+    + Jotunn
