@@ -1,5 +1,5 @@
-- Equip
-    - Epic Loot
++ Equip
+    + Epic Loot
         - tweak stats
         - add judes equipment + chaos armor
     + SagesVault
@@ -9,14 +9,15 @@
     - Alltameable
         - add goblins
         - add lycans
-+ Utility
-    + EquipmentAndQuickSlots
-    + FallDamageForCreatures
-    + UseEquipmentInWater
-    + BetterLadders
-    + SpeedyPaths
-    + MistBeGone
-    + TargetPortal
 + Support
     + BenInEx
     + Jotunn
++ Utility
+    + BetterLadders
+    + EquipmentAndQuickSlots
+    + FallDamageForCreatures
+    + MistBeGone
+    + SkillGiveMoreCarryWeight
+    + SpeedyPaths
+    + TargetPortal
+    + UseEquipmentInWater
