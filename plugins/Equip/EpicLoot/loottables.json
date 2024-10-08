@@ -181,7 +181,10 @@
         { "Item": "ArmorLeatherLegs",  "Rarity": [ 94, 3, 2, 1, 0 ] },
         { "Item": "ArmorLeatherChest", "Rarity": [ 94, 3, 2, 1, 0 ] },
         { "Item": "HelmetLeather",     "Rarity": [ 94, 3, 2, 1, 0 ] },
-        { "Item": "CapeDeerHide",      "Rarity": [ 94, 3, 2, 1, 0 ] }
+        { "Item": "CapeDeerHide",      "Rarity": [ 94, 3, 2, 1, 0 ] },
+        { "Item": "ArmorNobleHelmet",      "Rarity": [ 94, 3, 2, 1, 0 ] },
+        { "Item": "ArmorNobleChest",      "Rarity": [ 94, 3, 2, 1, 0 ] },
+        { "Item": "ArmorNobleCape",      "Rarity": [ 94, 3, 2, 1, 0 ] }
       ]
     },
     {
@@ -237,7 +240,14 @@
       "Loot": [
         { "Item": "ArmorBronzeLegs",  "Rarity": [ 80, 14, 4, 2, 0 ] },
         { "Item": "ArmorBronzeChest", "Rarity": [ 80, 14, 4, 2, 0 ] },
-        { "Item": "HelmetBronze",     "Rarity": [ 80, 14, 4, 2, 0 ] }
+        { "Item": "HelmetBronze",     "Rarity": [ 80, 14, 4, 2, 0 ] },
+        { "Item": "ArmorBarbarianBronzeHelmetJD",     "Rarity": [ 80, 14, 4, 2, 0 ] },
+        { "Item": "ArmorBarbarianBronzeChestJD",     "Rarity": [ 80, 14, 4, 2, 0 ] },
+        { "Item": "ArmorBarbarianBronzeLegsJD",     "Rarity": [ 80, 14, 4, 2, 0 ] },
+        { "Item": "ArmorBarbarianCapeJD",       "Rarity": [ 80, 14, 4, 2, 0 ] },
+        { "Item": "ArmorWarriorHelmet",     "Rarity": [ 80, 14, 4, 2, 0 ] },
+        { "Item": "ArmorWarriorChest",     "Rarity": [ 80, 14, 4, 2, 0 ] },
+        { "Item": "ArmorWarriorLegs",     "Rarity": [ 80, 14, 4, 2, 0 ] }
       ]
     },
     {
@@ -287,7 +297,11 @@
         { "Item": "HelmetRoot",     "Weight": 1, "Rarity": [ 38, 50, 8, 3, 1] },
         { "Item": "ArmorIronLegs",  "Weight": 1, "Rarity": [ 38, 50, 8, 3, 1 ] },
         { "Item": "ArmorIronChest", "Weight": 1, "Rarity": [ 38, 50, 8, 3, 1 ] },
-        { "Item": "HelmetIron",     "Weight": 1, "Rarity": [ 38, 50, 8, 3, 1 ] }
+        { "Item": "HelmetIron",     "Weight": 1, "Rarity": [ 38, 50, 8, 3, 1 ] },
+        { "Item": "ArmorPlateIronHelmetJD",     "Weight": 1, "Rarity": [ 38, 50, 8, 3, 1 ] },
+        { "Item": "ArmorPlateIronChestJD",     "Weight": 1, "Rarity": [ 38, 50, 8, 3, 1 ] },
+        { "Item": "ArmorPlateIronLegsJD",     "Weight": 1, "Rarity": [ 38, 50, 8, 3, 1 ] },
+        { "Item": "ArmorPlateCape",     "Weight": 1, "Rarity": [ 38, 50, 8, 3, 1 ] }
       ]
     },
     {
@@ -335,7 +349,10 @@
         { "Item": "ArmorWolfLegs",      "Weight": 1, "Rarity": [ 5, 35, 50, 17, 3 ] },
         { "Item": "ArmorWolfChest",     "Weight": 1, "Rarity": [ 5, 35, 50, 17, 3 ] },
         { "Item": "HelmetDrake",        "Weight": 1, "Rarity": [ 5, 35, 50, 17, 3 ] },
-        { "Item": "CapeWolf",           "Weight": 1, "Rarity": [ 5, 35, 50, 17, 3 ] }
+        { "Item": "CapeWolf",           "Weight": 1, "Rarity": [ 5, 35, 50, 17, 3 ] },
+        { "Item": "ArmorDragonslayerHelmet",        "Weight": 1, "Rarity": [ 5, 35, 50, 17, 3 ] },
+        { "Item": "ArmorDragonslayerChest",        "Weight": 1, "Rarity": [ 5, 35, 50, 17, 3 ] },
+        { "Item": "ArmorDragonslayerLegs",        "Weight": 1, "Rarity": [ 5, 35, 50, 17, 3 ] }
       ]
     },
     {
@@ -373,7 +390,14 @@
         { "Item": "ArmorPaddedCuirass", "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] },
         { "Item": "HelmetPadded",       "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] },
         { "Item": "CapeLinen",          "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] },
-        { "Item": "CapeLox",            "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] }
+        { "Item": "CapeLox",            "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] },
+        { "Item": "ArmorBlackmetalgarbHelmet",       "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] },
+        { "Item": "ArmorBlackmetalgarbChest",       "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] },
+        { "Item": "ArmorBlackmetalgarbLegs",       "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] },
+        { "Item": "ArmorWandererHelmet",       "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] },
+        { "Item": "ArmorWandererChest",       "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] },
+        { "Item": "ArmorWandererLegs",       "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] },
+        { "Item": "ArmorWandererCape",       "Weight": 1, "Rarity": [ 0, 15, 60, 20, 5 ] }
       ]
     },
     {
@@ -421,7 +445,11 @@
         { "Item": "ArmorMageChest",     "Weight": 1, "Rarity": [ 0, 10, 50, 30, 10 ] },
         { "Item": "ArmorMageLegs",      "Weight": 1, "Rarity": [ 0, 10, 50, 30, 10 ] },
         { "Item": "HelmetMage",         "Weight": 1, "Rarity": [ 0, 10, 50, 30, 10 ] },
-        { "Item": "CapeFeather",        "Weight": 1, "Rarity": [ 0, 10, 50, 30, 10 ] }
+        { "Item": "CapeFeather",        "Weight": 1, "Rarity": [ 0, 10, 50, 30, 10 ] },
+        { "Item": "ArmorSerpentHelmet",         "Weight": 1, "Rarity": [ 0, 10, 50, 30, 10 ] },
+        { "Item": "ArmorSerpentChest",         "Weight": 1, "Rarity": [ 0, 10, 50, 30, 10 ] },
+        { "Item": "ArmorSerpentLegs",         "Weight": 1, "Rarity": [ 0, 10, 50, 30, 10 ] },
+        { "Item": "ArmorSerpentCape",         "Weight": 1, "Rarity": [ 0, 10, 50, 30, 10 ] }
       ]
     },
     {
@@ -478,7 +506,10 @@
         { "Item": "ArmorMageLegs_Ashlands",   "Weight": 1, "Rarity": [ 0, 5, 35, 45, 15 ] },
         { "Item": "HelmetMage_Ashlands",      "Weight": 1, "Rarity": [ 0, 5, 35, 45, 15 ] },
         { "Item": "CapeAsh",                  "Weight": 1, "Rarity": [ 0, 5, 35, 45, 15 ] },
-        { "Item": "CapeAsksvin",              "Weight": 1, "Rarity": [ 0, 5, 35, 45, 15 ] }
+        { "Item": "CapeAsksvin",              "Weight": 1, "Rarity": [ 0, 5, 35, 45, 15 ] },
+        { "Item": "ArmorMistlandsHelmet",           "Weight": 1, "Rarity": [ 0, 5, 35, 45, 15 ] },
+        { "Item": "ArmorMistlandsChest",           "Weight": 1, "Rarity": [ 0, 5, 35, 45, 15 ] },
+        { "Item": "ArmorMistlandsLegs",           "Weight": 1, "Rarity": [ 0, 5, 35, 45, 15 ] }
       ]
     },
     {
