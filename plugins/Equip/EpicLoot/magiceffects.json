@@ -120,7 +120,6 @@
           "TwoHandedWeapon",
           "TwoHandedWeaponLeft",
           "Bow",
-          "Torch",
           "Staff"
         ],
         "ExcludedSkillTypes": [
@@ -152,56 +151,6 @@
       ]
     },
     {
-      "Type" : "ModifyDurability",
-      "DisplayText" : "$mod_epicloot_me_modifydurability_display",
-      "Description" : "$mod_epicloot_me_modifydurability_desc",
-      "Requirements" : {
-        "ExclusiveEffectTypes" : [
-          "Indestructible"
-        ],
-        "AllowedItemTypes" : [
-          "OneHandedWeapon",
-          "TwoHandedWeapon",
-          "TwoHandedWeaponLeft",
-          "Bow",
-          "Torch",
-          "Shield",
-          "Tool",
-          "Helmet",
-          "Chest",
-          "Legs",
-          "Shoulder",
-          "Staff"
-        ],
-        "AllowedRarities" : [
-          "Magic",
-          "Rare",
-          "Epic"
-        ],
-        "ExcludedItemNames" : [
-          "$item_fishingrod"
-        ],
-        "ItemUsesDurability" : true
-      },
-      "ValuesPerRarity" : {
-        "Magic" : { "MinValue" : 20, "MaxValue" : 80, "Increment" : 5 },
-        "Rare"  : { "MinValue" : 30, "MaxValue" : 90, "Increment" : 5 },
-        "Epic"  : { "MinValue" : 40, "MaxValue" : 100, "Increment" : 5 }
-      },
-      "SelectionWeight" : 1,
-      "Prefixes": [
-        "$mod_epicloot_me_modifydurability_prefix1",
-        "$mod_epicloot_me_modifydurability_prefix2",
-        "$mod_epicloot_me_modifydurability_prefix3"
-      ],
-      "Suffixes": [
-        "$mod_epicloot_me_modifydurability_suffix1",
-        "$mod_epicloot_me_modifydurability_suffix2",
-        "$mod_epicloot_me_modifydurability_suffix3",
-        "$mod_epicloot_me_modifydurability_suffix4"
-      ]
-    },
-    {
       "Type" : "RemoveSpeedPenalty",
       "DisplayText" : "$mod_epicloot_me_removespeedpenalty_display",
       "Description" : "$mod_epicloot_me_removespeedpenalty_desc",
@@ -214,13 +163,11 @@
           "TwoHandedWeapon",
           "TwoHandedWeaponLeft",
           "Bow",
-          "Torch",
           "Shield",
           "Tool",
           "Helmet",
           "Chest",
           "Legs",
-          "Shoulder",
           "Staff"
         ],
         "ItemHasNegativeMovementSpeedModifier" : true
@@ -243,6 +190,7 @@
       "Requirements" : {
         "AllowedItemTypes" : [
           "Shield",
+          "OneHandedWeapon",
           "TwoHandedWeapon",
           "TwoHandedWeaponLeft",
           "Staff"
@@ -371,8 +319,6 @@
           "Shoulder",
           "Utility",
           "Shield",
-          "Tool",
-          "Torch",
           "TwoHandedWeaponLeft"
         ]
       },
@@ -403,7 +349,6 @@
           "Shoulder",
           "Utility",
           "Shield",
-          "Tool",
           "TwoHandedWeaponLeft"
         ]
       },
@@ -433,7 +378,8 @@
           "Legs",
           "Shoulder",
           "Utility",
-          "Staff"
+          "Staff",
+          "TwoHandedWeaponLeft"
         ],
         "ExcludedItemNames" : [
           "$item_hammer",
@@ -610,10 +556,6 @@
         ],
         "ExcludedItemNames": [
           "$item_fishingrod"
-        ],
-        "AllowedSkillTypes": [
-          "Clubs",
-          "Sledges"
         ]
       },
       "ValuesPerRarity" : {
@@ -658,9 +600,6 @@
         ],
         "ExcludedItemNames": [
           "$item_fishingrod"
-        ],
-        "AllowedSkillTypes": [
-          "Swords"
         ]
       },
       "ValuesPerRarity" : {
@@ -705,11 +644,6 @@
         ],
         "ExcludedItemNames": [
           "$item_fishingrod"
-        ],
-        "AllowedSkillTypes": [
-          "Bows",
-          "Crossbows",
-          "Polearms"
         ]
       },
       "ValuesPerRarity" : {
@@ -966,8 +900,6 @@
           "Shoulder",
           "Utility",
           "Shield",
-          "Tool",
-          "Torch",
           "TwoHandedWeaponLeft"
         ]
       },
@@ -990,7 +922,10 @@
           "Chest",
           "Legs",
           "Shoulder",
-          "Utility"
+          "Utility",
+          "Shield",
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "SelectionWeight" : 1,
@@ -1012,7 +947,9 @@
           "Chest",
           "Legs",
           "Shoulder",
-          "Utility"
+          "Utility",
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "SelectionWeight" : 1,
@@ -1034,7 +971,9 @@
           "Chest",
           "Legs",
           "Shoulder",
-          "Utility"
+          "Utility",
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "SelectionWeight" : 1,
@@ -1056,7 +995,9 @@
           "Chest",
           "Legs",
           "Shoulder",
-          "Utility"
+          "Utility",
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "SelectionWeight" : 1,
@@ -1077,7 +1018,9 @@
           "Chest",
           "Legs",
           "Shoulder",
-          "Utility"
+          "Utility",
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "ValuesPerRarity" : {
@@ -1105,7 +1048,9 @@
           "Chest",
           "Legs",
           "Shoulder",
-          "Utility"
+          "Utility",
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "ValuesPerRarity" : {
@@ -1133,7 +1078,9 @@
           "Chest",
           "Legs",
           "Shoulder",
-          "Utility"
+          "Utility",
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "ValuesPerRarity" : {
@@ -1161,7 +1108,9 @@
           "Chest",
           "Legs",
           "Shoulder",
-          "Utility"
+          "Utility",
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "ValuesPerRarity" : {
@@ -1190,7 +1139,9 @@
           "Chest",
           "Legs",
           "Shoulder",
-          "Utility"
+          "Utility",
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "ValuesPerRarity" : {
@@ -1249,7 +1200,8 @@
           "Legs",
           "Shoulder",
           "Utility",
-          "Shield"
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "ValuesPerRarity" : {
@@ -1278,7 +1230,8 @@
           "Legs",
           "Shoulder",
           "Utility",
-          "Shield"
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "ValuesPerRarity" : {
@@ -1307,7 +1260,8 @@
           "Legs",
           "Shoulder",
           "Utility",
-          "Shield"
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "ValuesPerRarity" : {
@@ -1337,7 +1291,8 @@
           "Legs",
           "Shoulder",
           "Utility",
-          "Shield"
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "ValuesPerRarity" : {
@@ -1366,7 +1321,8 @@
           "Legs",
           "Shoulder",
           "Utility",
-          "Shield"
+          "Shield",
+          "TwoHandedWeaponLeft"
         ]
       },
       "ValuesPerRarity" : {
@@ -1396,7 +1352,6 @@
           "Legs",
           "Utility",
           "Tool",
-          "Knives",
           "TwoHandedWeaponLeft"
         ]
       },
@@ -1484,6 +1439,12 @@
         "ExcludedItemTypes" : [
           "Staff"
         ],
+        "ExcludedItemNames" : [
+          "$item_hammer",
+          "$item_hoe",
+          "$item_cultivator",
+          "$item_fishingrod"
+        ],
         "ItemUsesStaminaOnAttack" : true
       },
       "ValuesPerRarity" : {
@@ -1511,8 +1472,7 @@
           "OneHandedWeapon",
           "TwoHandedWeapon",
           "TwoHandedWeaponLeft",
-          "Staff",
-          "Tool"
+          "Staff"
         ],
         "ExcludedItemNames" : [
           "$item_fishingrod"
@@ -1548,7 +1508,8 @@
           "TwoHandedWeaponLeft",
           "Bow",
           "Tool",
-          "Shield"
+          "Shield",
+          "Staff"
         ],
         "ExcludedItemNames" : [
           "$item_fishingrod"
@@ -1575,9 +1536,7 @@
         "AllowedItemTypes" : [
           "OneHandedWeapon",
           "TwoHandedWeapon",
-          "TwoHandedWeaponLeft",
-          "Bow",
-          "Staff"
+          "TwoHandedWeaponLeft"
         ],
         "ExcludedSkillTypes": [
           "Pickaxes"
@@ -1741,18 +1700,9 @@
       "Type" : "WaterWalking",
       "DisplayText" : "$mod_epicloot_me_waterwalk_display",
       "Description" : "$mod_epicloot_me_waterwalk_desc",
-      "Requirements" : {
-        "Requirements" : {
-          "AllowedItemTypes" : [
-            "Legs"
-          ],
-          "AllowedRarities" : [
-            "Epic",
-            "Legendary",
-            "Mythic"
-          ]
-        }
-      },
+      "AllowedItemTypes" : [
+        "Legs"
+      ],
       "SelectionWeight" : 1,
       "Prefixes": [
         "$mod_epicloot_me_waterwalk_prefix1",
@@ -1769,7 +1719,8 @@
       "Description" : "$mod_epicloot_me_explosivearrows_desc",
       "Requirements" : {
         "AllowedItemTypes" : [
-          "Bow"
+          "Bow",
+          "Crossbows"
         ],
         "ExcludedSkillTypes": [
           "Pickaxes"
@@ -2193,7 +2144,6 @@
         "AllowedItemTypes" : [
           "OneHandedWeapon",
           "TwoHandedWeapon",
-          "Bow",
           "Shield"
         ],
         "ExcludedSkillTypes": [
@@ -2243,8 +2193,9 @@
       "DisplayText" : "$mod_epicloot_me_freebuild_display",
       "Description" : "$mod_epicloot_me_freebuild_desc",
       "Requirements" : {
-        "AllowedItemTypes" : [
-          "Tool"
+        "AllowedItemNames" : [
+          "$item_hammer",
+          "$item_hoe"
         ],
         "AllowedRarities" : [
           "Legendary",
@@ -2361,8 +2312,7 @@
       "Description" : "$mod_epicloot_me_modifydiscoveryradius_desc",
       "Requirements" : {
         "AllowedItemTypes" : [
-          "Helmet",
-          "Utility"
+          "Helmet"
         ]
       },
       "ValuesPerRarity" : {
@@ -2377,101 +2327,12 @@
       "Suffixes": [ "$mod_epicloot_me_modifydiscoveryradius_suffix1" ]
     },
     {
-      "Type" : "Comfortable",
-      "DisplayText" : "$mod_epicloot_me_comfortable_display",
-      "Description" : "$mod_epicloot_me_comfortable_desc",
-      "Requirements" : {
-        "AllowedItemTypes" : [
-          "Shoulder"
-        ],
-        "AllowedRarities" : [
-          "Epic",
-          "Legendary",
-          "Mythic"
-        ]
-      },
-      "ValuesPerRarity" : {
-        "Epic"      : { "MinValue" : 1, "MaxValue" : 1, "Increment" : 1 },
-        "Legendary" : { "MinValue" : 2, "MaxValue" : 2, "Increment" : 1 },
-        "Mythic"    : { "MinValue" : 3, "MaxValue" : 3, "Increment" : 1 }
-      },
-      "SelectionWeight" : 1,
-      "Prefixes": [ "$mod_epicloot_me_comfortable_prefix1" ],
-      "Suffixes": [ "$mod_epicloot_me_comfortable_suffix1" ]
-    },
-    {
-      "Type" : "ModifyHealthRegenLowHealth",
-      "DisplayText" : "$mod_epicloot_me_modifyhealthregenlowhealth_display",
-      "Description" : "$mod_epicloot_me_modifyhealthregenlowhealth_desc",
-      "Requirements" : {
-        "AllowedItemTypes" : [
-          "Helmet",
-          "Chest",
-          "Legs",
-          "Shoulder",
-          "Utility",
-          "Shield",
-          "Tool",
-          "Torch",
-          "TwoHandedWeaponLeft"
-        ]
-      },
-      "ValuesPerRarity" : {
-        "Magic"     : { "MinValue" : 4, "MaxValue" : 8, "Increment" : 1 },
-        "Rare"      : { "MinValue" : 6, "MaxValue" : 13, "Increment" : 1 },
-        "Epic"      : { "MinValue" : 11, "MaxValue" : 18, "Increment" : 1 },
-        "Legendary" : { "MinValue" : 16, "MaxValue" : 23, "Increment" : 1 },
-        "Mythic"    : { "MinValue" : 21, "MaxValue" : 28, "Increment" : 1 }
-      },
-      "SelectionWeight" : 1,
-      "Prefixes": [
-        "$mod_epicloot_me_modifyhealthregenlowhealth_prefix1"
-      ],
-      "Suffixes": [
-        "$mod_epicloot_me_modifyhealthregenlowhealth_suffix1"
-      ]
-    },
-    {
-      "Type" : "ModifyArmorLowHealth",
-      "DisplayText" : "$mod_epicloot_me_modifyarmorlowhealth_display",
-      "Description" : "$mod_epicloot_me_modifyarmorlowhealth_desc",
-      "Requirements" : {
-        "AllowedItemTypes" : [
-          "Helmet",
-          "Chest",
-          "Legs",
-          "Shoulder",
-          "Utility"
-        ],
-        "ItemHasArmor" : true
-      },
-      "ValuesPerRarity" : {
-        "Magic"     : { "MinValue" : 4, "MaxValue" : 9, "Increment" : 1 },
-        "Rare"      : { "MinValue" : 7, "MaxValue" : 12, "Increment" : 1 },
-        "Epic"      : { "MinValue" : 9, "MaxValue" : 15, "Increment" : 1 },
-        "Legendary" : { "MinValue" : 12, "MaxValue" : 18, "Increment" : 1 },
-        "Mythic"    : { "MinValue" : 15, "MaxValue" : 21, "Increment" : 1 }
-      },
-      "SelectionWeight" : 1,
-      "Prefixes": [
-        "$mod_epicloot_me_modifyarmorlowhealth_prefix1",
-        "$mod_epicloot_me_modifyarmorlowhealth_prefix2"
-      ],
-      "Suffixes": [
-        "$mod_epicloot_me_modifyarmorlowhealth_suffix1"
-      ]
-    },
-    {
       "Type" : "ModifyBlockPowerLowHealth",
       "DisplayText" : "$mod_epicloot_me_modifyblockpowerlowhealth_display",
       "Description" : "$mod_epicloot_me_modifyblockpowerlowhealth_desc",
       "Requirements" : {
         "AllowedItemTypes" : [
-          "Shield",
-          "OneHandedWeapon",
-          "TwoHandedWeapon",
-          "TwoHandedWeaponLeft",
-          "Staff"
+          "Shield"
         ],
         "ExcludedSkillTypes": [
           "Pickaxes"
@@ -2502,10 +2363,7 @@
       "Requirements" : {
         "AllowedItemTypes" : [
           "Chest",
-          "Shield",
-          "Tool",
-          "TwoHandedWeapon",
-          "TwoHandedWeaponLeft"
+          "Shield"
         ]
       },
       "ValuesPerRarity" : {
@@ -2822,9 +2680,6 @@
         "$mod_epicloot_me_triplebowshot_suffix1"
       ]
     },
-
-    // Set Effects
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     {
       "Type" : "Bulwark",
       "DisplayText" : "$mod_epicloot_set_me_bulwark",

@@ -1,14 +1,20 @@
 - Equip
     - Epic Loot
         - tweak stats
-        - add judes equipment + chaos armor
+            - knives block
+            - pickaxe block
+            - parry window
+        + add judes equipment + chaos armor
     + SagesVault
     + JudesEquipment
     + ChaosArmor
-- NPC    
-    - Alltameable
-        - add goblins
-        - add lycans
++ NPC
+    + MonstrumDeepNorth
+    + PopVillages
+    + Alltameable
+        + goblins
+        + lycans
+        + deers
 + Support
     + BenInEx
     + Jotunn
@@ -21,3 +27,4 @@
     + SpeedyPaths
     + TargetPortal
     + UseEquipmentInWater
+    + FloorsAreRoofs
