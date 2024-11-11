@@ -416,6 +416,16 @@
                 Galdr table crafting station
             </summary>
         </member>
+        <member name="P:Jotunn.Configs.CraftingStations.MeadKetill">
+            <summary>
+                Mead Ketill crafting station
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.CraftingStations.FoodPreparationTable">
+            <summary>
+                Food Preparation Table crafting station
+            </summary>
+        </member>
         <member name="M:Jotunn.Configs.CraftingStations.GetNames">
             <summary>
                 Gets the human readable name to internal names map
@@ -1235,6 +1245,21 @@
                 Piece 'Furniture' category
             </summary>
         </member>
+        <member name="P:Jotunn.Configs.PieceCategories.Food">
+            <summary>
+                Piece 'Food' category
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.PieceCategories.Mead">
+            <summary>
+                Piece 'Mead' category
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.PieceCategories.Feasts">
+            <summary>
+                Piece 'Feasts' category
+            </summary>
+        </member>
         <member name="P:Jotunn.Configs.PieceCategories.All">
             <summary>
                 All piece categories
@@ -1419,6 +1444,11 @@
         <member name="P:Jotunn.Configs.PieceTables.Hoe">
             <summary>
                 Hoe piece table
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.PieceTables.ServingTray">
+            <summary>
+                Serving Tray piece table
             </summary>
         </member>
         <member name="M:Jotunn.Configs.PieceTables.GetNames">
@@ -4952,6 +4982,22 @@
                 Translate a <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> to its axis string value
             </summary>
         </member>
+        <member name="M:Jotunn.Managers.InputManager.GetAxisPath(System.String)">
+            <summary>
+                Translate an axis string to its
+                <see cref="P:UnityEngine.InputSystem.InputBinding.path">UnityEngine.InputSystem.InputBinding.path</see> value
+            </summary>
+            <param name="axis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Managers.InputManager.GetGamepadInputPath(GamepadInput)">
+            <summary>
+                Translate a <see cref="T:GamepadInput"/> to its
+                <see cref="P:UnityEngine.InputSystem.InputBinding.path">UnityEngine.InputSystem.InputBinding.path</see> value
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
         <member name="M:Jotunn.Managers.InputManager.GetGamepadString(Jotunn.Managers.InputManager.GamepadButton)">
             <summary>
                 Translates a <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> to its printable string value
@@ -8159,6 +8205,21 @@
             <summary>
                 Translate an axis string to its <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> value
             </summary>
+        </member>
+        <member name="M:Jotunn.Utils.InputUtils.GetAxisPath(System.String)">
+            <summary>
+                Translate an axis string to its <see cref="P:UnityEngine.InputSystem.InputBinding.path">UnityEngine.InputSystem.InputBinding.path</see> value
+            </summary>
+            <param name="axis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.InputUtils.GetGamepadInputPath(GamepadInput)">
+            <summary>
+                Translate a <see cref="T:GamepadInput"/> to its
+                <see cref="P:UnityEngine.InputSystem.InputBinding.path">UnityEngine.InputSystem.InputBinding.path</see> value
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
         </member>
         <member name="M:Jotunn.Utils.InputUtils.GetGamepadButton(UnityEngine.KeyCode)">
             <summary>
